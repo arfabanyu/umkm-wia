@@ -1,5 +1,7 @@
 // src/data/umkmData.ts
 
+import { v7 as uuid } from "uuid";
+
 export interface Alamat {
     nama_jalan: string;
     nomor: string;
@@ -22,6 +24,7 @@ export interface Produk {
 }
 
 export interface UMKM {
+    id: string;
     nama_usaha: string;
     jenis: string;
     deskripsi: string;
@@ -49,6 +52,7 @@ export interface UMKM {
 // Contoh data pertama (Kedai Kopi Senja):
 export const umkmData: UMKM[] = [
     {
+        id: uuid(),
         nama_usaha: "Kedai Kopi Senja",
         jenis: "Kafe",
         deskripsi:
@@ -91,7 +95,7 @@ export const umkmData: UMKM[] = [
                 foto: "foto/kopi/croissant.jpg",
             },
         ],
-        kategori: "Minuman/Kopi",
+        kategori: "Minuman",
         logo_umkm: "logo/kopisenja.png",
         galery: ["galeri/kopi1.jpg", "galeri/kopi2.jpg", "galeri/kopi3.jpg"],
         video: "video/kopisenja-intro.mp4",
@@ -108,6 +112,7 @@ export const umkmData: UMKM[] = [
         },
     },
     {
+        id: uuid(),
         nama_usaha: "Bakso Bintang Lima",
         jenis: "Warung Makan",
         deskripsi:
@@ -170,6 +175,7 @@ export const umkmData: UMKM[] = [
         },
     },
     {
+        id: uuid(),
         nama_usaha: "Roti Bakar Viral Mantu",
         jenis: "Kaki Lima",
         deskripsi:
@@ -232,6 +238,7 @@ export const umkmData: UMKM[] = [
         },
     },
     {
+        id: uuid(),
         nama_usaha: "Pangkas Rambut Klasik Budi",
         jenis: "Jasa Potong Rambut",
         deskripsi:
@@ -291,6 +298,7 @@ export const umkmData: UMKM[] = [
         },
     },
     {
+        id: uuid(),
         nama_usaha: "Toko Kerajinan Rotan Bu Endang",
         jenis: "Ritel/Kerajinan",
         deskripsi:
@@ -350,6 +358,7 @@ export const umkmData: UMKM[] = [
         },
     },
     {
+        id: uuid(),
         nama_usaha: "Sate Padang Petir",
         jenis: "Warung Makan",
         deskripsi:
@@ -409,6 +418,7 @@ export const umkmData: UMKM[] = [
         },
     },
     {
+        id: uuid(),
         nama_usaha: "Distro Kaos Indie",
         jenis: "Ritel Pakaian",
         deskripsi:
@@ -471,6 +481,7 @@ export const umkmData: UMKM[] = [
         },
     },
     {
+        id: uuid(),
         nama_usaha: "Laundry Kiloan Bersih Wangi",
         jenis: "Jasa",
         deskripsi:
@@ -518,6 +529,7 @@ export const umkmData: UMKM[] = [
         },
     },
     {
+        id: uuid(),
         nama_usaha: "Martabak Manis & Telur Sultan",
         jenis: "Kaki Lima/Snack",
         deskripsi:
@@ -577,6 +589,7 @@ export const umkmData: UMKM[] = [
         },
     },
     {
+        id: uuid(),
         nama_usaha: "Bengkel Motor 'Jagoan Baut'",
         jenis: "Jasa Perbaikan",
         deskripsi:
@@ -636,6 +649,7 @@ export const umkmData: UMKM[] = [
         },
     },
     {
+        id: uuid(),
         nama_usaha: "Toko Kue Mama Nia",
         jenis: "Ritel/Makanan",
         deskripsi:
@@ -695,6 +709,7 @@ export const umkmData: UMKM[] = [
         },
     },
     {
+        id: uuid(),
         nama_usaha: "Jasa Ketik dan Print 'Cepat Kilat'",
         jenis: "Jasa Administrasi",
         deskripsi:
@@ -746,6 +761,7 @@ export const umkmData: UMKM[] = [
         },
     },
     {
+        id: uuid(),
         nama_usaha: "Studio Foto 'Jepret Ceria'",
         jenis: "Jasa Fotografi",
         deskripsi:
