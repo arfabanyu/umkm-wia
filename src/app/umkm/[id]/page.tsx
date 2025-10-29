@@ -3,6 +3,9 @@
 // import { useParams } from "react-router-dom";
 import { useParams } from "next/navigation";
 import { umkmData } from "@/data/umkmData";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft, ArrowLeftCircle } from "lucide-react";
 
 export default function DetailUMKMPage() {
   const { id } = useParams<{ id: string }>();
@@ -24,6 +27,16 @@ export default function DetailUMKMPage() {
   return (
     <div className="min-h-screen bg-gray-50 p-6 md:p-10">
       <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+        <div className="p-4 border-b bg-gray-50 flex items-center">
+          <Link
+            href={"/"}
+            className="flex items-center gap-2 text-gray-600 hover:text-gray-800 transition"
+          >
+            <ArrowLeft />
+            <span>Kembali</span>
+          </Link>
+        </div>
+
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/3 bg-gray-100 flex items-center justify-center">
             <img

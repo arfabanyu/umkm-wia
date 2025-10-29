@@ -105,13 +105,22 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { UMKM } from "@/data/umkmData";
 import Link from "next/link";
 import { InputGroup, InputGroupAddon, InputGroupInput } from "./ui/input-group";
-import { Funnel, Heart, Search } from "lucide-react";
+import { Funnel, Heart, Search, Slice } from "lucide-react";
 import { Collapsible, CollapsibleContent } from "./ui/collapsible";
 
 const multiFilter: FilterFn<UMKM> = (row, columnId, filterValue) => {
   if (!filterValue || filterValue.length === 0) return true;
-  const cellValue = row.getValue<string>(columnId);
-  return filterValue.includes(cellValue);
+  const cellValue = row.getValue(columnId);
+
+  if (Array.isArray(cellValue)) {
+    return cellValue.some((v) => filterValue.includes(v));
+  }
+
+  if (typeof cellValue === "string") {
+    return filterValue.includes(cellValue);
+  }
+
+  return false;
 };
 
 export const columns: ColumnDef<UMKM>[] = [
@@ -131,10 +140,6 @@ export const columns: ColumnDef<UMKM>[] = [
   { accessorKey: "pengiriman", header: "Pengiriman", filterFn: multiFilter },
   { accessorKey: "alamat", header: "Alamat" },
   { accessorKey: "deskripsi", header: "Deskripsi" },
-  { accessorKey: "kontak.telepon", header: "Telepon" },
-  { accessorKey: "kontak.email", header: "Email" },
-  { accessorKey: "kontak.instagram", header: "Instagram" },
-  { accessorKey: "kontak.website", header: "Website" },
 ];
 
 export function DataTable({ data: initialData }: { data: UMKM[] }) {
@@ -160,6 +165,31 @@ export function DataTable({ data: initialData }: { data: UMKM[] }) {
     pageSize: 10,
   });
   const [globalFilter, setGlobalFilter] = React.useState("");
+
+  const [showFavoritesOnly, setShowFavoritesOnly] = React.useState(false);
+  const [favorites, setFavorites] = React.useState<string[]>([]);
+
+  React.useEffect(() => {
+    try {
+      const saved = localStorage.getItem("favorites");
+      if (saved) setFavorites(JSON.parse(saved));
+    } catch {
+      console.error("Gagal memuat favorites dari localStorage");
+    }
+  }, []);
+
+  React.useEffect(() => {
+    try {
+      const current = localStorage.getItem("favorites");
+      const parsed = current ? JSON.parse(current) : [];
+      if (JSON.stringify(parsed) !== JSON.stringify(favorites)) {
+        localStorage.setItem("favorites", JSON.stringify(favorites));
+      }
+    } catch {
+      console.error("Gagal menyimpan favorites ke localStorage");
+    }
+  }, [favorites]);
+
   const fuzzyFilter = (text: string, search: string) => {
     const result = rankItem(text ?? "", search);
     return result.passed;
@@ -176,8 +206,14 @@ export function DataTable({ data: initialData }: { data: UMKM[] }) {
     });
   }
 
+  const filteredData = React.useMemo(() => {
+    return showFavoritesOnly
+      ? data.filter((d) => favorites.includes(d.id?.toString() ?? ""))
+      : data;
+  }, [data, favorites, showFavoritesOnly]);
+
   const table = useReactTable({
-    data,
+    data: filteredData,
     columns,
     state: {
       sorting,
@@ -223,8 +259,23 @@ export function DataTable({ data: initialData }: { data: UMKM[] }) {
   const allPengiriman = Array.from(
     new Set(data.flatMap((d) => d.pengiriman)),
   ).sort();
+  console.log(table.getAllColumns());
 
   const [open, setOpen] = React.useState<boolean>(false);
+
+  function toggleFavorite(id?: string | number) {
+    if (!id) return;
+    const key = id.toString();
+    setFavorites((prev) => {
+      const updated = prev.includes(key)
+        ? prev.filter((f) => f !== key)
+        : [...prev, key];
+      toast(
+        prev.includes(key) ? "Dihapus dari favorit" : "Ditambahkan ke favorit",
+      );
+      return updated;
+    });
+  }
 
   return (
     <div className="flex flex-col px-4 lg:px-6">
@@ -243,9 +294,20 @@ export function DataTable({ data: initialData }: { data: UMKM[] }) {
               }}
             />
           </InputGroup>
-          <Button variant={"outline"}>
-            <Heart className="text-rose-500" /> Favorite
+          <Button
+            variant={showFavoritesOnly ? "default" : "outline"}
+            onClick={() => setShowFavoritesOnly((prev) => !prev)}
+          >
+            <Heart
+              className={
+                showFavoritesOnly
+                  ? "text-rose-500 fill-rose-500"
+                  : "text-rose-500"
+              }
+            />
+            {showFavoritesOnly ? "Tampilkan Semua" : "Favorite"}
           </Button>
+
           <Button variant={"outline"} onClick={() => setOpen(!open)}>
             <Funnel /> Filter
           </Button>
@@ -294,25 +356,6 @@ export function DataTable({ data: initialData }: { data: UMKM[] }) {
         <Collapsible open={open} onOpenChange={setOpen}>
           <CollapsibleContent className="pt-4 space-y-6">
             {/* Kategori */}
-            <div>
-              <h4 className="text-sm font-medium mb-2">Kategori</h4>
-              <div className="flex flex-wrap gap-2">
-                {allKategori.map((kategori) => {
-                  const active = filters.kategori.includes(kategori);
-                  return (
-                    <Button
-                      key={kategori}
-                      variant={active ? "default" : "outline"}
-                      onClick={() => toggleFilter("kategori", kategori)}
-                      size="sm"
-                      className="rounded-full"
-                    >
-                      {kategori}
-                    </Button>
-                  );
-                })}
-              </div>
-            </div>
 
             {/* Jenis */}
             <div>
@@ -364,17 +407,51 @@ export function DataTable({ data: initialData }: { data: UMKM[] }) {
             <div>
               <h4 className="text-sm font-medium mb-2">Pembayaran</h4>
               <div className="flex flex-wrap gap-2">
-                {allPembayaran.map((metode) => {
-                  const active = filters.pembayaran.includes(metode);
+                {allPembayaran.map((pembayaran) => {
+                  const selected =
+                    (table
+                      .getColumn("pembayaran")
+                      ?.getFilterValue() as string[]) ?? [];
+                  const isChecked = selected.includes(pembayaran);
+
+                  const handleClick = () => {
+                    const current =
+                      (table
+                        .getColumn("pembayaran")
+                        ?.getFilterValue() as string[]) ?? [];
+                    if (isChecked) {
+                      table
+                        .getColumn("pembayaran")
+                        ?.setFilterValue(
+                          current.filter((c) => c !== pembayaran),
+                        );
+                      console.log(
+                        table
+                          .getColumn("pembayaran")
+                          ?.setFilterValue(
+                            current.filter((c) => c !== pembayaran),
+                          ),
+                      );
+                    } else {
+                      table
+                        .getColumn("pembayaran")
+                        ?.setFilterValue([...current, pembayaran]);
+                    }
+                    table.setPageIndex(0);
+                  };
                   return (
                     <Button
-                      key={metode}
-                      variant={active ? "default" : "outline"}
-                      onClick={() => toggleFilter("pembayaran", metode)}
-                      size="sm"
-                      className="rounded-full"
+                      key={pembayaran}
+                      type="button"
+                      variant={isChecked ? "default" : "outline"}
+                      className={`text-sm px-3 py-1.5 transition-all ${
+                        isChecked
+                          ? "bg-primary text-primary-foreground shadow-sm"
+                          : "hover:bg-muted/60"
+                      }`}
+                      onClick={handleClick}
                     >
-                      {metode}
+                      {pembayaran}
                     </Button>
                   );
                 })}
@@ -425,9 +502,24 @@ export function DataTable({ data: initialData }: { data: UMKM[] }) {
                     </span>
                     <span>{row.original.nama_pemilik || ""}</span>
                   </div>
-                  <Button className="mt-4" variant="default" asChild>
-                    <Link href={`/umkm/${row.original.id}`}>Detail</Link>
-                  </Button>
+                  <div className="flex mt-4 gap-2 relative">
+                    <Button className="flex-1" variant="default" asChild>
+                      <Link href={`/umkm/${row.original.id}`}>Detail</Link>
+                    </Button>
+                    <Button
+                      onClick={() => toggleFavorite(row.original.id.toString())}
+                      className="text-gray-400 hover:text-rose-500 transition"
+                    >
+                      <Heart
+                        size={20}
+                        className={
+                          favorites.includes(row.original.id.toString())
+                            ? "fill-rose-500 text-rose-500"
+                            : "text-gray-400"
+                        }
+                      />
+                    </Button>
+                  </div>
                 </div>
               );
             })
@@ -447,30 +539,6 @@ export function DataTable({ data: initialData }: { data: UMKM[] }) {
         </div>
 
         <div className="flex w-full items-center gap-8 lg:w-fit">
-          {/* Rows per page */}
-          <div className="hidden items-center gap-2 lg:flex">
-            <Label htmlFor="rows-per-page" className="text-sm font-medium">
-              Rows per page
-            </Label>
-            <Select
-              value={`${table.getState().pagination.pageSize}`}
-              onValueChange={(value) => table.setPageSize(Number(value))}
-            >
-              <SelectTrigger size="sm" className="w-20" id="rows-per-page">
-                <SelectValue
-                  placeholder={table.getState().pagination.pageSize}
-                />
-              </SelectTrigger>
-              <SelectContent side="top">
-                {[6, 9, 12, 15, 18].map((pageSize) => (
-                  <SelectItem key={pageSize} value={`${pageSize}`}>
-                    {pageSize}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-          </div>
-
           {/* Page navigation */}
           <div className="flex items-center gap-2">
             <Button
