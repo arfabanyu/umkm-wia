@@ -1,0 +1,730 @@
+[
+  {
+    "nama_usaha": "Kedai Kopi Senja",
+    "jenis": "Kafe",
+    "deskripsi": "Spot ngopi yang tenang dengan biji kopi lokal berkualitas tinggi. Cocok untuk kerja santai maupun bertemu teman.",
+    "tahun_berdiri": 2018,
+    "nama_pemilik": "Rizky Firmansyah",
+    "no_telepon": 81298765432,
+    "alamat_email": "kopisenja@email.com",
+    "alamat": {
+      "nama_jalan": "Jl. Kembang Raya",
+      "nomor": "15A",
+      "kota": "Jakarta Selatan",
+      "kode_pos": 12780,
+      "longitude": 106.8456,
+      "altitude": -6.25
+    },
+    "operasional": [
+      { "hari": "senin", "operasional": true, "jam": "08:00-22:00" },
+      { "hari": "selasa", "operasional": true, "jam": "08:00-22:00" },
+      { "hari": "rabu", "operasional": true, "jam": "08:00-22:00" },
+      { "hari": "kamis", "operasional": true, "jam": "08:00-22:00" },
+      { "hari": "jumat", "operasional": true, "jam": "08:00-23:00" },
+      { "hari": "sabtu", "operasional": true, "jam": "09:00-23:00" },
+      { "hari": "minggu", "operasional": false, "jam": "" }
+    ],
+    "nama_produk": [
+      {
+        "nama": "Kopi Susu Senja",
+        "harga": 22000,
+        "foto": "foto/kopi/kopi-susu-senja.jpg"
+      },
+      {
+        "nama": "Americano Lokal",
+        "harga": 18000,
+        "foto": "foto/kopi/americano.jpg"
+      },
+      {
+        "nama": "Croissant Cokelat",
+        "harga": 25000,
+        "foto": "foto/kopi/croissant.jpg"
+      }
+    ],
+    "kategori": "Minuman/Kopi",
+    "logo_umkm": "logo/kopisenja.png",
+    "galery": ["galeri/kopi1.jpg", "galeri/kopi2.jpg", "galeri/kopi3.jpg"],
+    "video": "video/kopisenja-intro.mp4",
+    "sosial_media": { "instagram": "@kopisenja.id", "twitter": "" },
+    "ratings": { "rata_rata": 4.7, "jumlah_review": 150 },
+    "pembayaran": ["Tunai", "QRIS", "Debit"],
+    "pengiriman": ["Ambil Sendiri", "Gojek", "Grab"],
+    "target_pelanggan": ["Mahasiswa", "Pekerja Kantoran", "Remaja"],
+    "tanggal_dibuat": {
+      "hari": "10",
+      "bulan": "Juni",
+      "tahun": "2024",
+      "jam": "14:30"
+    }
+  },
+  {
+    "nama_usaha": "Bakso Bintang Lima",
+    "jenis": "Warung Makan",
+    "deskripsi": "Bakso urat legendaris dengan kuah kaldu sapi kental, sudah ada sejak tahun 80-an.",
+    "tahun_berdiri": 1985,
+    "nama_pemilik": "Ibu Siti Aisyah",
+    "no_telepon": 81345678901,
+    "alamat_email": "baksolima@email.com",
+    "alamat": {
+      "nama_jalan": "Gg. Makmur",
+      "nomor": "5",
+      "kota": "Depok",
+      "kode_pos": 16411,
+      "longitude": 106.8229,
+      "altitude": -6.397
+    },
+    "operasional": [
+      { "hari": "senin", "operasional": true, "jam": "10:00-21:00" },
+      { "hari": "selasa", "operasional": true, "jam": "10:00-21:00" },
+      { "hari": "rabu", "operasional": true, "jam": "10:00-21:00" },
+      { "hari": "kamis", "operasional": true, "jam": "10:00-21:00" },
+      { "hari": "jumat", "operasional": true, "jam": "13:00-21:00" },
+      { "hari": "sabtu", "operasional": true, "jam": "10:00-22:00" },
+      { "hari": "minggu", "operasional": true, "jam": "10:00-22:00" }
+    ],
+    "nama_produk": [
+      {
+        "nama": "Bakso Urat Jumbo",
+        "harga": 30000,
+        "foto": "foto/bakso/urat-jumbo.jpg"
+      },
+      {
+        "nama": "Mie Ayam Bakso",
+        "harga": 25000,
+        "foto": "foto/bakso/mie-ayam-bakso.jpg"
+      },
+      {
+        "nama": "Es Campur",
+        "harga": 15000,
+        "foto": "foto/bakso/es-campur.jpg"
+      }
+    ],
+    "kategori": "Makanan",
+    "logo_umkm": "logo/baksolima.png",
+    "galery": ["galeri/bakso1.jpg", "galeri/bakso2.jpg", "galeri/bakso3.jpg"],
+    "video": "video/bakso-review.mp4",
+    "sosial_media": {
+      "instagram": "@baksolimalegend",
+      "facebook": "Bakso Bintang Lima"
+    },
+    "ratings": { "rata_rata": 4.5, "jumlah_review": 320 },
+    "pembayaran": ["Tunai", "QRIS"],
+    "pengiriman": ["Ambil Sendiri", "Gojek", "Grab", "Shopee Food"],
+    "target_pelanggan": ["Keluarga", "Semua Usia"],
+    "tanggal_dibuat": {
+      "hari": "15",
+      "bulan": "Mei",
+      "tahun": "2024",
+      "jam": "09:00"
+    }
+  },
+  {
+    "nama_usaha": "Roti Bakar Viral Mantu",
+    "jenis": "Kaki Lima",
+    "deskripsi": "Roti bakar dengan 15 varian rasa kekinian, paling laris di malam hari!",
+    "tahun_berdiri": 2021,
+    "nama_pemilik": "Bagas Setiawan",
+    "no_telepon": 81923456789,
+    "alamat_email": "rotiviral@email.com",
+    "alamat": {
+      "nama_jalan": "Jalan Raya Margonda",
+      "nomor": "Samping Alfa",
+      "kota": "Depok",
+      "kode_pos": 16423,
+      "longitude": 106.8315,
+      "altitude": -6.367
+    },
+    "operasional": [
+      { "hari": "senin", "operasional": true, "jam": "18:00-00:00" },
+      { "hari": "selasa", "operasional": true, "jam": "18:00-00:00" },
+      { "hari": "rabu", "operasional": true, "jam": "18:00-00:00" },
+      { "hari": "kamis", "operasional": true, "jam": "18:00-00:00" },
+      { "hari": "jumat", "operasional": true, "jam": "18:00-01:00" },
+      { "hari": "sabtu", "operasional": true, "jam": "18:00-01:00" },
+      { "hari": "minggu", "operasional": false, "jam": "" }
+    ],
+    "nama_produk": [
+      {
+        "nama": "Roti Bakar Keju Meleleh",
+        "harga": 20000,
+        "foto": "foto/roti/keju.jpg"
+      },
+      {
+        "nama": "Roti Bakar Milo Dinosaurs",
+        "harga": 25000,
+        "foto": "foto/roti/milo.jpg"
+      },
+      {
+        "nama": "Indomie Rebus Spesial",
+        "harga": 15000,
+        "foto": "foto/roti/indomie.jpg"
+      }
+    ],
+    "kategori": "Makanan",
+    "logo_umkm": "logo/rotiviral.png",
+    "galery": ["galeri/roti1.jpg", "galeri/roti2.jpg"],
+    "video": "",
+    "sosial_media": { "instagram": "@rotimantu", "tiktok": "rotimantu.viral" },
+    "ratings": { "rata_rata": 4.9, "jumlah_review": 98 },
+    "pembayaran": ["Tunai", "QRIS"],
+    "pengiriman": ["Gojek", "Grab", "Shopee Food"],
+    "target_pelanggan": ["Remaja", "Mahasiswa"],
+    "tanggal_dibuat": {
+      "hari": "01",
+      "bulan": "Maret",
+      "tahun": "2024",
+      "jam": "11:00"
+    }
+  },
+  {
+    "nama_usaha": "Pangkas Rambut Klasik Budi",
+    "jenis": "Jasa Potong Rambut",
+    "deskripsi": "Layanan potong rambut pria profesional dengan nuansa klasik dan produk *pomade* lokal terbaik.",
+    "tahun_berdiri": 2005,
+    "nama_pemilik": "Budi Santoso",
+    "no_telepon": 81176543210,
+    "alamat_email": "",
+    "alamat": {
+      "nama_jalan": "Jl. Ciputat Raya",
+      "nomor": "40",
+      "kota": "Tangerang Selatan",
+      "kode_pos": 15412,
+      "longitude": 106.7583,
+      "altitude": -6.3115
+    },
+    "operasional": [
+      { "hari": "senin", "operasional": true, "jam": "09:00-20:00" },
+      { "hari": "selasa", "operasional": true, "jam": "09:00-20:00" },
+      { "hari": "rabu", "operasional": true, "jam": "09:00-20:00" },
+      { "hari": "kamis", "operasional": true, "jam": "09:00-20:00" },
+      { "hari": "jumat", "operasional": true, "jam": "09:00-20:00" },
+      { "hari": "sabtu", "operasional": true, "jam": "09:00-21:00" },
+      { "hari": "minggu", "operasional": false, "jam": "" }
+    ],
+    "nama_produk": [
+      {
+        "nama": "Haircut & Wash",
+        "harga": 50000,
+        "foto": "foto/jasa/haircut.jpg"
+      },
+      { "nama": "Shaving", "harga": 30000, "foto": "foto/jasa/shaving.jpg" },
+      {
+        "nama": "Hair Tonic Treatment",
+        "harga": 20000,
+        "foto": "foto/jasa/tonic.jpg"
+      }
+    ],
+    "kategori": "Jasa",
+    "logo_umkm": "logo/barberbudi.png",
+    "galery": ["galeri/barber1.jpg", "galeri/barber2.jpg"],
+    "video": "",
+    "sosial_media": { "instagram": "@pangkasbudi" },
+    "ratings": { "rata_rata": 4.8, "jumlah_review": 120 },
+    "pembayaran": ["Tunai", "Debit"],
+    "pengiriman": [],
+    "target_pelanggan": ["Pria Dewasa", "Remaja Pria"],
+    "tanggal_dibuat": {
+      "hari": "20",
+      "bulan": "April",
+      "tahun": "2024",
+      "jam": "16:00"
+    }
+  },
+  {
+    "nama_usaha": "Toko Kerajinan Rotan Bu Endang",
+    "jenis": "Ritel/Kerajinan",
+    "deskripsi": "Menjual berbagai kerajinan tangan dari rotan, bambu, dan kayu untuk dekorasi rumah.",
+    "tahun_berdiri": 1998,
+    "nama_pemilik": "Endang Wulandari",
+    "no_telepon": 85711223344,
+    "alamat_email": "kerajinanendang@email.com",
+    "alamat": {
+      "nama_jalan": "Jalan Sentra Industri",
+      "nomor": "B-7",
+      "kota": "Bogor",
+      "kode_pos": 16710,
+      "longitude": 106.815,
+      "altitude": -6.6
+    },
+    "operasional": [
+      { "hari": "senin", "operasional": true, "jam": "09:00-17:00" },
+      { "hari": "selasa", "operasional": true, "jam": "09:00-17:00" },
+      { "hari": "rabu", "operasional": true, "jam": "09:00-17:00" },
+      { "hari": "kamis", "operasional": true, "jam": "09:00-17:00" },
+      { "hari": "jumat", "operasional": true, "jam": "09:00-17:00" },
+      { "hari": "sabtu", "operasional": true, "jam": "09:00-14:00" },
+      { "hari": "minggu", "operasional": false, "jam": "" }
+    ],
+    "nama_produk": [
+      {
+        "nama": "Kursi Rotan Malaka",
+        "harga": 750000,
+        "foto": "foto/kerajinan/kursi.jpg"
+      },
+      {
+        "nama": "Lampu Gantung Bambu",
+        "harga": 150000,
+        "foto": "foto/kerajinan/lampu.jpg"
+      },
+      {
+        "nama": "Anyaman Hias Dinding",
+        "harga": 80000,
+        "foto": "foto/kerajinan/anyaman.jpg"
+      }
+    ],
+    "kategori": "Ritel",
+    "logo_umkm": "logo/endangrotan.png",
+    "galery": ["galeri/rotan1.jpg", "galeri/rotan2.jpg", "galeri/rotan3.jpg"],
+    "video": "video/rotan-proses.mp4",
+    "sosial_media": { "website": "www.rotanendang.com" },
+    "ratings": { "rata_rata": 4.6, "jumlah_review": 65 },
+    "pembayaran": ["Tunai", "Transfer Bank"],
+    "pengiriman": ["Ambil Sendiri", "Ekspedisi"],
+    "target_pelanggan": ["Pecinta Dekorasi", "Rumah Tangga"],
+    "tanggal_dibuat": {
+      "hari": "05",
+      "bulan": "Maret",
+      "tahun": "2024",
+      "jam": "10:00"
+    }
+  },
+  {
+    "nama_usaha": "Sate Padang Petir",
+    "jenis": "Warung Makan",
+    "deskripsi": "Sate Padang dengan bumbu kuah kuning pedas yang 'menyambar' lidah. Wajib coba!",
+    "tahun_berdiri": 2015,
+    "nama_pemilik": "Rahmat Hidayat",
+    "no_telepon": 81711223344,
+    "alamat_email": "satepetir@email.com",
+    "alamat": {
+      "nama_jalan": "Jl. Tebet Utara Dalam",
+      "nomor": "21",
+      "kota": "Jakarta Selatan",
+      "kode_pos": 12820,
+      "longitude": 106.8375,
+      "altitude": -6.2378
+    },
+    "operasional": [
+      { "hari": "senin", "operasional": true, "jam": "17:00-23:00" },
+      { "hari": "selasa", "operasional": true, "jam": "17:00-23:00" },
+      { "hari": "rabu", "operasional": true, "jam": "17:00-23:00" },
+      { "hari": "kamis", "operasional": true, "jam": "17:00-23:00" },
+      { "hari": "jumat", "operasional": true, "jam": "17:00-00:00" },
+      { "hari": "sabtu", "operasional": true, "jam": "17:00-00:00" },
+      { "hari": "minggu", "operasional": true, "jam": "17:00-23:00" }
+    ],
+    "nama_produk": [
+      {
+        "nama": "Sate Sapi Jumbo",
+        "harga": 35000,
+        "foto": "foto/sate/sapi.jpg"
+      },
+      {
+        "nama": "Sate Ayam Kuah Kuning",
+        "harga": 28000,
+        "foto": "foto/sate/ayam.jpg"
+      },
+      {
+        "nama": "Nasi Goreng Padang",
+        "harga": 25000,
+        "foto": "foto/sate/nasgor.jpg"
+      }
+    ],
+    "kategori": "Makanan",
+    "logo_umkm": "logo/satepetir.png",
+    "galery": ["galeri/sate1.jpg", "galeri/sate2.jpg"],
+    "video": "",
+    "sosial_media": { "instagram": "@satepadangpetir" },
+    "ratings": { "rata_rata": 4.4, "jumlah_review": 210 },
+    "pembayaran": ["Tunai", "QRIS"],
+    "pengiriman": ["Gojek", "Grab"],
+    "target_pelanggan": ["Pecinta Pedas", "Makan Malam"],
+    "tanggal_dibuat": {
+      "hari": "08",
+      "bulan": "April",
+      "tahun": "2024",
+      "jam": "18:00"
+    }
+  },
+  {
+    "nama_usaha": "Distro Kaos Indie",
+    "jenis": "Ritel Pakaian",
+    "deskripsi": "Menjual kaos *limited edition* dengan desain original dari seniman lokal independen.",
+    "tahun_berdiri": 2019,
+    "nama_pemilik": "Dewi Sartika",
+    "no_telepon": 82233445566,
+    "alamat_email": "indiekaos@email.com",
+    "alamat": {
+      "nama_jalan": "Komplek Ruko A-8",
+      "nomor": "8",
+      "kota": "Bandung",
+      "kode_pos": 40135,
+      "longitude": 107.6191,
+      "altitude": -6.9175
+    },
+    "operasional": [
+      { "hari": "senin", "operasional": true, "jam": "10:00-20:00" },
+      { "hari": "selasa", "operasional": true, "jam": "10:00-20:00" },
+      { "hari": "rabu", "operasional": true, "jam": "10:00-20:00" },
+      { "hari": "kamis", "operasional": true, "jam": "10:00-20:00" },
+      { "hari": "jumat", "operasional": true, "jam": "10:00-21:00" },
+      { "hari": "sabtu", "operasional": true, "jam": "10:00-21:00" },
+      { "hari": "minggu", "operasional": false, "jam": "" }
+    ],
+    "nama_produk": [
+      {
+        "nama": "Kaos 'Senja di Kota'",
+        "harga": 120000,
+        "foto": "foto/kaos/senja.jpg"
+      },
+      {
+        "nama": "Jaket Hoodie Katun",
+        "harga": 250000,
+        "foto": "foto/kaos/hoodie.jpg"
+      },
+      {
+        "nama": "Sticker Pack V.2",
+        "harga": 20000,
+        "foto": "foto/kaos/sticker.jpg"
+      }
+    ],
+    "kategori": "Ritel",
+    "logo_umkm": "logo/distroindie.png",
+    "galery": ["galeri/distro1.jpg", "galeri/distro2.jpg"],
+    "video": "video/distro-tour.mp4",
+    "sosial_media": {
+      "instagram": "@kaosindie_bdg",
+      "website": "www.indiekaos.com"
+    },
+    "ratings": { "rata_rata": 4.9, "jumlah_review": 80 },
+    "pembayaran": ["Tunai", "QRIS", "Transfer Bank"],
+    "pengiriman": ["JNE", "J&T", "Sicepat"],
+    "target_pelanggan": ["Anak Muda", "Pecinta Desain"],
+    "tanggal_dibuat": {
+      "hari": "03",
+      "bulan": "Maret",
+      "tahun": "2024",
+      "jam": "15:00"
+    }
+  },
+  {
+    "nama_usaha": "Laundry Kiloan Bersih Wangi",
+    "jenis": "Jasa",
+    "deskripsi": "Jasa laundry kiloan dan satuan dengan layanan antar jemput gratis untuk area sekitar.",
+    "tahun_berdiri": 2017,
+    "nama_pemilik": "Adi Prasetyo",
+    "no_telepon": 87899887766,
+    "alamat_email": "bersihwangi@email.com",
+    "alamat": {
+      "nama_jalan": "Jl. Raya Kampus",
+      "nomor": "3",
+      "kota": "Jakarta Timur",
+      "kode_pos": 13730,
+      "longitude": 106.878,
+      "altitude": -6.321
+    },
+    "operasional": [
+      { "hari": "senin", "operasional": true, "jam": "07:00-21:00" },
+      { "hari": "selasa", "operasional": true, "jam": "07:00-21:00" },
+      { "hari": "rabu", "operasional": true, "jam": "07:00-21:00" },
+      { "hari": "kamis", "operasional": true, "jam": "07:00-21:00" },
+      { "hari": "jumat", "operasional": true, "jam": "07:00-21:00" },
+      { "hari": "sabtu", "operasional": true, "jam": "07:00-20:00" },
+      { "hari": "minggu", "operasional": true, "jam": "09:00-17:00" }
+    ],
+    "nama_produk": [
+      { "nama": "Cuci Kering Lipat (per kg)", "harga": 8000, "foto": "" },
+      { "nama": "Cuci Satuan Bed Cover", "harga": 45000, "foto": "" },
+      { "nama": "Setrika Saja (per kg)", "harga": 5000, "foto": "" }
+    ],
+    "kategori": "Jasa",
+    "logo_umkm": "logo/laundry.png",
+    "galery": ["galeri/laundry1.jpg", "galeri/laundry2.jpg"],
+    "video": "",
+    "sosial_media": { "whatsapp": "6287899887766" },
+    "ratings": { "rata_rata": 4.3, "jumlah_review": 75 },
+    "pembayaran": ["Tunai", "Transfer Bank"],
+    "pengiriman": ["Antar Jemput Gratis"],
+    "target_pelanggan": ["Anak Kos", "Rumah Tangga Sibuk"],
+    "tanggal_dibuat": {
+      "hari": "12",
+      "bulan": "Februari",
+      "tahun": "2024",
+      "jam": "08:30"
+    }
+  },
+  {
+    "nama_usaha": "Martabak Manis & Telur Sultan",
+    "jenis": "Kaki Lima/Snack",
+    "deskripsi": "Martabak tebal dengan *topping* premium: Nutella, Toblerone, hingga Ovomaltine.",
+    "tahun_berdiri": 2020,
+    "nama_pemilik": "Kevin Sanjaya",
+    "no_telepon": 81809876543,
+    "alamat_email": "martabaksultan@email.com",
+    "alamat": {
+      "nama_jalan": "Jalan Pemuda",
+      "nomor": "Depan Apotek",
+      "kota": "Bekasi",
+      "kode_pos": 17121,
+      "longitude": 107.002,
+      "altitude": -6.23
+    },
+    "operasional": [
+      { "hari": "senin", "operasional": true, "jam": "16:00-23:00" },
+      { "hari": "selasa", "operasional": true, "jam": "16:00-23:00" },
+      { "hari": "rabu", "operasional": true, "jam": "16:00-23:00" },
+      { "hari": "kamis", "operasional": true, "jam": "16:00-23:00" },
+      { "hari": "jumat", "operasional": true, "jam": "16:00-00:00" },
+      { "hari": "sabtu", "operasional": true, "jam": "16:00-00:00" },
+      { "hari": "minggu", "operasional": true, "jam": "16:00-23:00" }
+    ],
+    "nama_produk": [
+      {
+        "nama": "Martabak 8 Rasa",
+        "harga": 80000,
+        "foto": "foto/martabak/8rasa.jpg"
+      },
+      {
+        "nama": "Martabak Telur Daging Sapi",
+        "harga": 45000,
+        "foto": "foto/martabak/telur.jpg"
+      },
+      {
+        "nama": "Terang Bulan Keju",
+        "harga": 35000,
+        "foto": "foto/martabak/terangbulan.jpg"
+      }
+    ],
+    "kategori": "Makanan",
+    "logo_umkm": "logo/martabaksultan.png",
+    "galery": ["galeri/martabak1.jpg", "galeri/martabak2.jpg"],
+    "video": "",
+    "sosial_media": { "instagram": "@martabaksultan" },
+    "ratings": { "rata_rata": 4.6, "jumlah_review": 180 },
+    "pembayaran": ["Tunai", "QRIS", "ShopeePay"],
+    "pengiriman": ["Gojek", "Grab", "Shopee Food"],
+    "target_pelanggan": ["Keluarga", "Pasangan"],
+    "tanggal_dibuat": {
+      "hari": "25",
+      "bulan": "Januari",
+      "tahun": "2024",
+      "jam": "19:00"
+    }
+  },
+  {
+    "nama_usaha": "Bengkel Motor 'Jagoan Baut'",
+    "jenis": "Jasa Perbaikan",
+    "deskripsi": "Servis dan perbaikan motor cepat, murah, dan garansi. Khusus motor matic.",
+    "tahun_berdiri": 2010,
+    "nama_pemilik": "Haji Ahmad",
+    "no_telepon": 81577665544,
+    "alamat_email": "jagoanbaut@email.com",
+    "alamat": {
+      "nama_jalan": "Jl. Akses UI",
+      "nomor": "99",
+      "kota": "Depok",
+      "kode_pos": 16425,
+      "longitude": 106.84,
+      "altitude": -6.375
+    },
+    "operasional": [
+      { "hari": "senin", "operasional": true, "jam": "08:00-17:00" },
+      { "hari": "selasa", "operasional": true, "jam": "08:00-17:00" },
+      { "hari": "rabu", "operasional": true, "jam": "08:00-17:00" },
+      { "hari": "kamis", "operasional": true, "jam": "08:00-17:00" },
+      { "hari": "jumat", "operasional": true, "jam": "08:00-17:00" },
+      { "hari": "sabtu", "operasional": true, "jam": "08:00-15:00" },
+      { "hari": "minggu", "operasional": false, "jam": "" }
+    ],
+    "nama_produk": [
+      {
+        "nama": "Servis Ringan + Oli",
+        "harga": 150000,
+        "foto": "foto/bengkel/servis.jpg"
+      },
+      {
+        "nama": "Ganti Ban Luar",
+        "harga": 100000,
+        "foto": "foto/bengkel/ban.jpg"
+      },
+      {
+        "nama": "Ganti Kampas Rem",
+        "harga": 50000,
+        "foto": "foto/bengkel/rem.jpg"
+      }
+    ],
+    "kategori": "Jasa",
+    "logo_umkm": "logo/jagoanbaut.png",
+    "galery": ["galeri/bengkel1.jpg", "galeri/bengkel2.jpg"],
+    "video": "",
+    "sosial_media": { "facebook": "Bengkel Jagoan Baut" },
+    "ratings": { "rata_rata": 4.1, "jumlah_review": 95 },
+    "pembayaran": ["Tunai", "Debit"],
+    "pengiriman": [],
+    "target_pelanggan": ["Pemilik Motor Matic", "Warga Sekitar"],
+    "tanggal_dibuat": {
+      "hari": "18",
+      "bulan": "Maret",
+      "tahun": "2024",
+      "jam": "09:30"
+    }
+  },
+  {
+    "nama_usaha": "Toko Kue Mama Nia",
+    "jenis": "Ritel/Makanan",
+    "deskripsi": "Menyediakan kue-kue basah dan kering rumahan, menerima pesanan untuk acara.",
+    "tahun_berdiri": 2012,
+    "nama_pemilik": "Nia Ramadhani",
+    "no_telepon": 85600112233,
+    "alamat_email": "mamaniakue@email.com",
+    "alamat": {
+      "nama_jalan": "Perumahan Indah Blok D-10",
+      "nomor": "10",
+      "kota": "Bekasi",
+      "kode_pos": 17510,
+      "longitude": 107.035,
+      "altitude": -6.315
+    },
+    "operasional": [
+      { "hari": "senin", "operasional": true, "jam": "06:00-17:00" },
+      { "hari": "selasa", "operasional": true, "jam": "06:00-17:00" },
+      { "hari": "rabu", "operasional": true, "jam": "06:00-17:00" },
+      { "hari": "kamis", "operasional": true, "jam": "06:00-17:00" },
+      { "hari": "jumat", "operasional": true, "jam": "06:00-17:00" },
+      { "hari": "sabtu", "operasional": true, "jam": "06:00-14:00" },
+      { "hari": "minggu", "operasional": false, "jam": "" }
+    ],
+    "nama_produk": [
+      {
+        "nama": "Kue Lapis Legit",
+        "harga": 150000,
+        "foto": "foto/kue/lapis.jpg"
+      },
+      {
+        "nama": "Kue Brownies Cokelat",
+        "harga": 75000,
+        "foto": "foto/kue/brownies.jpg"
+      },
+      { "nama": "Nastar Toples", "harga": 50000, "foto": "foto/kue/nastar.jpg" }
+    ],
+    "kategori": "Makanan",
+    "logo_umkm": "logo/mamaniakue.png",
+    "galery": ["galeri/kue1.jpg", "galeri/kue2.jpg"],
+    "video": "",
+    "sosial_media": { "whatsapp": "6285600112233" },
+    "ratings": { "rata_rata": 4.8, "jumlah_review": 105 },
+    "pembayaran": ["Tunai", "Transfer Bank"],
+    "pengiriman": ["Ambil Sendiri", "Gojek", "Grab"],
+    "target_pelanggan": ["Ibu Rumah Tangga", "Kantor"],
+    "tanggal_dibuat": {
+      "hari": "01",
+      "bulan": "Januari",
+      "tahun": "2024",
+      "jam": "10:00"
+    }
+  },
+  {
+    "nama_usaha": "Jasa Ketik dan Print 'Cepat Kilat'",
+    "jenis": "Jasa Administrasi",
+    "deskripsi": "Melayani jasa pengetikan, *print*, *scan*, dan *binding* dokumen. Dekat kampus/sekolah.",
+    "tahun_berdiri": 2016,
+    "nama_pemilik": "Suryadi",
+    "no_telepon": 81611223344,
+    "alamat_email": "cepatkilat@email.com",
+    "alamat": {
+      "nama_jalan": "Jl. Akses Sekolah No. 5",
+      "nomor": "5",
+      "kota": "Jakarta Pusat",
+      "kode_pos": 10430,
+      "longitude": 106.855,
+      "altitude": -6.185
+    },
+    "operasional": [
+      { "hari": "senin", "operasional": true, "jam": "08:00-20:00" },
+      { "hari": "selasa", "operasional": true, "jam": "08:00-20:00" },
+      { "hari": "rabu", "operasional": true, "jam": "08:00-20:00" },
+      { "hari": "kamis", "operasional": true, "jam": "08:00-20:00" },
+      { "hari": "jumat", "operasional": true, "jam": "08:00-20:00" },
+      { "hari": "sabtu", "operasional": true, "jam": "09:00-16:00" },
+      { "hari": "minggu", "operasional": false, "jam": "" }
+    ],
+    "nama_produk": [
+      { "nama": "Print Hitam Putih (per lembar)", "harga": 300, "foto": "" },
+      { "nama": "Jasa Ketik (per halaman)", "harga": 2000, "foto": "" },
+      { "nama": "Binding Skripsi", "harga": 35000, "foto": "" }
+    ],
+    "kategori": "Jasa",
+    "logo_umkm": "logo/cepatkilat.png",
+    "galery": ["galeri/jasa-print.jpg"],
+    "video": "",
+    "sosial_media": { "whatsapp": "6281611223344" },
+    "ratings": { "rata_rata": 4.5, "jumlah_review": 110 },
+    "pembayaran": ["Tunai", "QRIS"],
+    "pengiriman": [],
+    "target_pelanggan": ["Pelajar", "Mahasiswa", "Kantoran"],
+    "tanggal_dibuat": {
+      "hari": "10",
+      "bulan": "Maret",
+      "tahun": "2024",
+      "jam": "07:30"
+    }
+  },
+  {
+    "nama_usaha": "Studio Foto 'Jepret Ceria'",
+    "jenis": "Jasa Fotografi",
+    "deskripsi": "Studio foto keluarga, wisuda, dan pas foto profesional dengan hasil cepat dan cerah.",
+    "tahun_berdiri": 2014,
+    "nama_pemilik": "Clara Devi",
+    "no_telepon": 81144556677,
+    "alamat_email": "jepretceria@email.com",
+    "alamat": {
+      "nama_jalan": "Ruko Niaga Blok C-5",
+      "nomor": "5",
+      "kota": "Tangerang",
+      "kode_pos": 15143,
+      "longitude": 106.6333,
+      "altitude": -6.175
+    },
+    "operasional": [
+      { "hari": "senin", "operasional": true, "jam": "10:00-18:00" },
+      { "hari": "selasa", "operasional": true, "jam": "10:00-18:00" },
+      { "hari": "rabu", "operasional": true, "jam": "10:00-18:00" },
+      { "hari": "kamis", "operasional": true, "jam": "10:00-18:00" },
+      { "hari": "jumat", "operasional": true, "jam": "10:00-18:00" },
+      { "hari": "sabtu", "operasional": true, "jam": "10:00-20:00" },
+      { "hari": "minggu", "operasional": true, "jam": "10:00-20:00" }
+    ],
+    "nama_produk": [
+      {
+        "nama": "Paket Foto Keluarga (1 jam)",
+        "harga": 450000,
+        "foto": "foto/studio/keluarga.jpg"
+      },
+      {
+        "nama": "Pas Foto Lamaran",
+        "harga": 75000,
+        "foto": "foto/studio/pasfoto.jpg"
+      },
+      {
+        "nama": "Sewa Kostum Wisuda",
+        "harga": 100000,
+        "foto": "foto/studio/wisuda.jpg"
+      }
+    ],
+    "kategori": "Jasa",
+    "logo_umkm": "logo/jepretceria.png",
+    "galery": ["galeri/foto1.jpg", "galeri/foto2.jpg", "galeri/foto3.jpg"],
+    "video": "video/studio-behind-scene.mp4",
+    "sosial_media": { "instagram": "@jepretceria", "website": "" },
+    "ratings": { "rata_rata": 4.7, "jumlah_review": 130 },
+    "pembayaran": ["Tunai", "Transfer Bank", "Debit"],
+    "pengiriman": ["Cetak Foto", "Soft File"],
+    "target_pelanggan": ["Keluarga", "Lulusan", "Profesional"],
+    "tanggal_dibuat": {
+      "hari": "22",
+      "bulan": "Februari",
+      "tahun": "2024",
+      "jam": "10:00"
+    }
+  }
+]
