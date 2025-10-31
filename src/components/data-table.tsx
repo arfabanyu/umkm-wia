@@ -107,6 +107,9 @@ import Link from "next/link";
 import { InputGroup, InputGroupAddon, InputGroupInput } from "./ui/input-group";
 import { Funnel, Heart, Search, Slice } from "lucide-react";
 import { Collapsible, CollapsibleContent } from "./ui/collapsible";
+import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
+import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 const multiFilter: FilterFn<UMKM> = (row, columnId, filterValue) => {
   if (!filterValue || filterValue.length === 0) return true;
@@ -468,47 +471,18 @@ export function DataTable({ data: initialData }: { data: UMKM[] }) {
               );
 
               return (
-                <div
+                <Card
                   key={row.id}
-                  className="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-4 flex flex-col border"
+                  className="text-card justify-end isolate relative pb-0 overflow-hidden"
+                  style={{
+                    background: `top center / cover no-repeat url(${row.original.logo_umkm})`,
+                  }}
                 >
-                  {row.original.logo_umkm ? (
-                    <img
-                      src={row.original.logo_umkm}
-                      alt={row.original.nama_usaha || "UMKM"}
-                      className="w-full h-40 object-cover rounded-lg mb-3"
-                    />
-                  ) : (
-                    <div className="w-full h-40 bg-gray-100 rounded-lg mb-3 flex items-center justify-center text-gray-400">
-                      No Image
-                    </div>
-                  )}
-
-                  <h3 className="text-lg font-semibold mb-1">
-                    {row.original.nama_usaha}
-                  </h3>
-                  <p className="text-sm text-gray-600 mb-2">
-                    {row.original.kategori}
-                  </p>
-                  <p className="text-sm text-gray-700 line-clamp-3 flex-1">
-                    {row.original.deskripsi}
-                  </p>
-
-                  <div className="mt-3 flex items-center justify-between text-sm text-gray-500">
-                    <span>
-                      {row.original.tahun_berdiri
-                        ? `Est. ${row.original.tahun_berdiri}`
-                        : ""}
-                    </span>
-                    <span>{row.original.nama_pemilik || ""}</span>
-                  </div>
-                  <div className="flex mt-4 gap-2 relative">
-                    <Button className="flex-1" variant="default" asChild>
-                      <Link href={`/umkm/${row.original.id}`}>Detail</Link>
-                    </Button>
+                  <CardHeader className="aspect-video">
                     <Button
                       onClick={() => toggleFavorite(row.original.id.toString())}
-                      className="text-gray-400 hover:text-rose-500 transition"
+                      variant={"outline"}
+                      className="text-gray-400 hover:text-rose-500 transition rounded-full justify-self-end"
                     >
                       <Heart
                         size={20}
@@ -519,8 +493,42 @@ export function DataTable({ data: initialData }: { data: UMKM[] }) {
                         }
                       />
                     </Button>
-                  </div>
-                </div>
+                  </CardHeader>
+                  <div className="absolute w-full -z-10 h-full blur- bg-linear-to-t from-black/90 via-35% via-black/50 to-50% to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 h-1/2 blur-out blur-lg"></div>
+                  <CardContent className="my-4 md:my-6 overflow-hidden">
+                    <div className="relative  overflow-hidden hover:h-auto">
+                      <h3 className="text-lg font-semibold mb-1">
+                        {row.original.nama_usaha}
+                      </h3>
+                      <Badge className="text-sm mb-2">
+                        {row.original.kategori}
+                      </Badge>
+                      <p className="text-sm text-muted line-clamp-3 flex-1">
+                        {row.original.deskripsi}
+                      </p>
+
+                      <div className="mt-3 flex items-center justify-between text-sm text-gray-500">
+                        <span>
+                          {row.original.tahun_berdiri
+                            ? `Est. ${row.original.tahun_berdiri}`
+                            : ""}
+                        </span>
+                        <span>{row.original.nama_pemilik || ""}</span>
+                      </div>
+                    </div>
+                  </CardContent>
+                  {/* <CardFooter className="gap-2">
+                    <Button
+                      className="flex-1 rounded-full"
+                      variant="default"
+                      asChild
+                    >
+                      <Link href={`/umkm/${row.original.id}`}>Detail</Link>
+                    </Button>
+                    
+                  </CardFooter> */}
+                </Card>
               );
             })
           ) : (
