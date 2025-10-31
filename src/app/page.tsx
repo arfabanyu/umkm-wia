@@ -13,11 +13,12 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 px-4 lg:px-6 flex-wrap-reverse">
           <div className="space-y-2 text-center lg:text-left grid place-content-center">
             <h1 className="text-4xl md:text-5xl font-bold">
-              Discover the World’s Top Designers
+              Temukan <span className="text-primary">UMKM</span> Terbaik di
+              Sekitar Kita
             </h1>
             <p>
-              Explore work from the most talented and accomplished designers
-              ready to take on your next project.
+              Kenali pelaku usaha yang membangun ekonomi kecil dari lingkungan
+              kita sendiri.
             </p>
           </div>
           <Image
@@ -32,7 +33,7 @@ export default function Home() {
         <DataTable data={umkmData} />
       </div>
       <div className="text-secondary bg-secondary-foreground py-6">
-        <h1 className="text-6xl md:text-8xl font-bold text-center">
+        <h1 className="text-6xl text-primary md:text-8xl font-bold text-center">
           LokalKita
         </h1>
         <p className="text-center">&copy; LokalKita 2025</p>
