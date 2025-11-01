@@ -2,39 +2,7 @@
 
 import { rankItem } from "@tanstack/match-sorter-utils";
 import * as React from "react";
-import {
-  closestCenter,
-  DndContext,
-  KeyboardSensor,
-  MouseSensor,
-  TouchSensor,
-  useSensor,
-  useSensors,
-  type DragEndEvent,
-  type UniqueIdentifier,
-} from "@dnd-kit/core";
-import { restrictToVerticalAxis } from "@dnd-kit/modifiers";
-import {
-  arrayMove,
-  SortableContext,
-  useSortable,
-  verticalListSortingStrategy,
-} from "@dnd-kit/sortable";
-import { CSS } from "@dnd-kit/utilities";
-import {
-  IconChevronDown,
-  IconChevronLeft,
-  IconChevronRight,
-  IconChevronsLeft,
-  IconChevronsRight,
-  IconCircleCheckFilled,
-  IconDotsVertical,
-  IconGripVertical,
-  IconLayoutColumns,
-  IconLoader,
-  IconPlus,
-  IconTrendingUp,
-} from "@tabler/icons-react";
+import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 import {
   ColumnDef,
   ColumnFiltersState,
@@ -51,62 +19,16 @@ import {
   useReactTable,
   VisibilityState,
 } from "@tanstack/react-table";
-import { Area, AreaChart, CartesianGrid, XAxis } from "recharts";
 import { toast } from "sonner";
-import { z } from "zod";
-
-import { useIsMobile } from "@/hooks/use-mobile";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import {
-  ChartConfig,
-  ChartContainer,
-  ChartTooltip,
-  ChartTooltipContent,
-} from "@/components/ui/chart";
-import { Checkbox } from "@/components/ui/checkbox";
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
-import {
-  DropdownMenu,
-  DropdownMenuCheckboxItem,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { Separator } from "@/components/ui/separator";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { UMKM } from "@/data/umkmData";
-import Link from "next/link";
 import { InputGroup, InputGroupAddon, InputGroupInput } from "./ui/input-group";
 import { Funnel, Heart, Search, Slice } from "lucide-react";
 import { Collapsible, CollapsibleContent } from "./ui/collapsible";
+import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const multiFilter: FilterFn<UMKM> = (row, columnId, filterValue) => {
   if (!filterValue || filterValue.length === 0) return true;
@@ -231,7 +153,8 @@ export function DataTable({ data: initialData }: { data: UMKM[] }) {
     onColumnFiltersChange: setColumnFilters,
     globalFilterFn: (row, _columnId, filterValue) => {
       const search = filterValue.toLowerCase();
-      const { nama_usaha, kategori, nama_pemilik, jenis } = row.original;
+      const { nama_usaha, kategori, nama_pemilik, jenis, deskripsi } =
+        row.original;
       return (
         fuzzyFilter(nama_usaha.toLowerCase(), search) ||
         fuzzyFilter(kategori.toLowerCase(), search) ||
@@ -279,8 +202,8 @@ export function DataTable({ data: initialData }: { data: UMKM[] }) {
 
   return (
     <div className="flex flex-col px-4 lg:px-6">
-      <div className="grid gap-4">
-        <div className="flex gap-3">
+      <div className="grid gap-4 **:rounded-full">
+        <div className="flex gap-3 ">
           <InputGroup className="w-full">
             <InputGroupAddon>
               <Search />
@@ -353,8 +276,12 @@ export function DataTable({ data: initialData }: { data: UMKM[] }) {
         </div>
       </div>
       <div className="grid gap-4">
-        <Collapsible open={open} onOpenChange={setOpen}>
-          <CollapsibleContent className="pt-4 space-y-6">
+        <Collapsible
+          open={open}
+          onOpenChange={setOpen}
+          className="transition duration-"
+        >
+          <CollapsibleContent className="pt-4 space-y-6 **:rounded-full">
             {/* Kategori */}
 
             {/* Jenis */}
@@ -468,63 +395,73 @@ export function DataTable({ data: initialData }: { data: UMKM[] }) {
               );
 
               return (
-                <div
+                <Link
                   key={row.id}
-                  className="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-4 flex flex-col border"
+                  href={`/umkm/${row.id}`}
+                  className="cursor-pointer "
                 >
-                  {row.original.logo_umkm ? (
-                    <img
-                      src={row.original.logo_umkm}
-                      alt={row.original.nama_usaha || "UMKM"}
-                      className="w-full h-40 object-cover rounded-lg mb-3"
-                    />
-                  ) : (
-                    <div className="w-full h-40 bg-gray-100 rounded-lg mb-3 flex items-center justify-center text-gray-400">
-                      No Image
-                    </div>
-                  )}
+                  <Card className="group justify-between text-card  isolate relative pb-0 overflow-hidden *:duration-250 ">
+                    <div
+                      className="absolute inset-0 bg-center -z-20 bg-cover transition-transform  group-hover:scale-110"
+                      style={{
+                        backgroundImage: `url(${row.original.logo_umkm})`,
+                      }}
+                    ></div>
+                    <CardHeader className="justify-self-start aspect-3/1">
+                      <Button
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          toggleFavorite(row.original.id.toString());
+                        }}
+                        variant={"outline"}
+                        className="z-50 aspect-square hover:text-rose-500 text-rose-500 transition rounded-full justify-self-end"
+                      >
+                        <Heart
+                          size={20}
+                          className={cn(
+                            favorites.includes(row.original.id.toString()) &&
+                              "fill-rose-500",
+                            "size-3 ",
+                          )}
+                        />
+                      </Button>
+                    </CardHeader>
+                    <div className="absolute w-full -z-10 h-full bg-linear-to-t group-hover:from-black from-black/90 group-hover:via-45% via-35% group-hover:via-black/70 via-black/60 group-hover:to-70% to-60% to-transparent transition "></div>
+                    <div className="absolute bottom-0 left-0 right-0 h-1/2 blur-out blur-lg"></div>
+                    <CardContent className="mb-4">
+                      <div className="relative hover:h-auto">
+                        <h3 className="text-lg text-white font-semibold mb-1">
+                          {row.original.nama_usaha}
+                        </h3>
+                        <Badge className="text-xs text-white mb-2">
+                          {row.original.kategori}
+                        </Badge>
+                        <p className="text-sm text-slate-200 flex-1 text-ellipsis line-clamp-2">
+                          {row.original.deskripsi}
+                        </p>
 
-                  <h3 className="text-lg font-semibold mb-1">
-                    {row.original.nama_usaha}
-                  </h3>
-                  <p className="text-sm text-gray-600 mb-2">
-                    {row.original.kategori}
-                  </p>
-                  <p className="text-sm text-gray-700 line-clamp-3 flex-1">
-                    {row.original.deskripsi}
-                  </p>
-
-                  <div className="mt-3 flex items-center justify-between text-sm text-gray-500">
-                    <span>
-                      {row.original.tahun_berdiri
-                        ? `Est. ${row.original.tahun_berdiri}`
-                        : ""}
-                    </span>
-                    <span>{row.original.nama_pemilik || ""}</span>
-                  </div>
-                  <div className="flex mt-4 gap-2 relative">
-                    <Button className="flex-1" variant="default" asChild>
+                        <div className="mt-3 flex items-center justify-between text-sm text-foreground">
+                          {/* <span>{row.original.nama_pemilik || ""}</span> */}
+                        </div>
+                      </div>
+                    </CardContent>
+                    {/* <CardFooter className="gap-2">
+                    <Button
+                      className="flex-1 rounded-full"
+                      variant="default"
+                      asChild
+                    >
                       <Link href={`/umkm/${row.original.id}`}>Detail</Link>
                     </Button>
-                    <Button
-                      onClick={() => toggleFavorite(row.original.id.toString())}
-                      className="text-gray-400 hover:text-rose-500 transition"
-                    >
-                      <Heart
-                        size={20}
-                        className={
-                          favorites.includes(row.original.id.toString())
-                            ? "fill-rose-500 text-rose-500"
-                            : "text-gray-400"
-                        }
-                      />
-                    </Button>
-                  </div>
-                </div>
+                    
+                  </CardFooter> */}
+                  </Card>
+                </Link>
               );
             })
           ) : (
-            <div className="text-center text-gray-500 py-12 col-span-full">
+            <div className="text-center text-foreground py-12 col-span-full">
               No results.
             </div>
           )}
@@ -532,15 +469,10 @@ export function DataTable({ data: initialData }: { data: UMKM[] }) {
       </div>
 
       {/* Pagination */}
-      <div className="flex items-center justify-between px-4">
-        <div className="hidden flex-1 text-sm text-muted-foreground lg:flex">
-          {table.getFilteredSelectedRowModel().rows.length} of{" "}
-          {table.getFilteredRowModel().rows.length} selected.
-        </div>
-
+      <div className="flex items-center justify-center px-4 pt-4">
         <div className="flex w-full items-center gap-8 lg:w-fit">
           {/* Page navigation */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 *:rounded-full">
             <Button
               variant="outline"
               size="icon"
@@ -551,7 +483,7 @@ export function DataTable({ data: initialData }: { data: UMKM[] }) {
             </Button>
 
             <div className="text-sm font-medium">
-              Page {table.getState().pagination.pageIndex + 1} of{" "}
+              Halaman {table.getState().pagination.pageIndex + 1} dari{" "}
               {table.getPageCount()}
             </div>
 
