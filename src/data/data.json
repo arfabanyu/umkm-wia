@@ -1,0 +1,1058 @@
+[
+  {
+    "nama_usaha": "Setia Laundry",
+    "jenis": "jasa",
+    "deskripsi": "usaha laundry kiloan dan satuan",
+    "deskripsi_generated": "Setia Laundry menyediakan jasa laundry kiloan dan satuan dengan harga terjangkau untuk orang dewasa dan pekerja. Buka setiap hari dari pagi hingga malam.",
+    "tahun_berdiri": 0,
+    "nama_pemilik": "Heri Setiawan",
+    "no_telepon": "082126666754",
+    "alamat_email": "sunartisetiawan2@gmail.com",
+    "alamat": {
+      "nama_jalan": "taruna",
+      "nomor": "10a",
+      "kota": "Jakarta Pusat",
+      "kode_pos": 10650,
+      "longitude": "-6.1601255",
+      "latitude": "106.8598526"
+    },
+    "operasional": [
+      {
+        "hari": "Senin",
+        "operasional": true,
+        "jam": "07:00-20:00"
+      },
+      {
+        "hari": "Selasa",
+        "operasional": true,
+        "jam": "07:00-20:00"
+      },
+      {
+        "hari": "Rabu",
+        "operasional": true,
+        "jam": "07:00-20:00"
+      },
+      {
+        "hari": "Kamis",
+        "operasional": true,
+        "jam": "07:00-20:00"
+      },
+      {
+        "hari": "Jumat",
+        "operasional": true,
+        "jam": "07:00-20:00"
+      },
+      {
+        "hari": "Sabtu",
+        "operasional": true,
+        "jam": "07:00-20:00"
+      },
+      {
+        "hari": "Minggu",
+        "operasional": true,
+        "jam": "07:00-20:00"
+      }
+    ],
+    "nama_produk": [
+      {
+        "nama": "kiloan",
+        "harga": 7000,
+        "foto": ""
+      },
+      {
+        "nama": "jas",
+        "harga": 35000,
+        "foto": ""
+      },
+      {
+        "nama": "toga",
+        "harga": 20000,
+        "foto": ""
+      }
+    ],
+    "kategori": "jasa",
+    "logo_umkm": "",
+    "gallery": [],
+    "video": "",
+    "sosial_media": [],
+    "ratings": 0,
+    "pembayaran": ["Cash", "Qris"],
+    "pengiriman": ["gojek", "take in", "delivery"],
+    "target_pelanggan": ["orang dewasa", "pekerja"],
+    "tanggal_dibuat": {
+      "hari": "Senin",
+      "tanggal": 20,
+      "bulan": "Oktober",
+      "tahun": 2025,
+      "jam": "21:29"
+    }
+  },
+  {
+    "nama_usaha": "Kopi Sejuta Jiwa",
+    "jenis": "f&b",
+    "deskripsi": "",
+    "deskripsi_generated": "Kopi Sejuta Jiwa menawarkan berbagai varian es kopi kekinian dengan harga ekonomis untuk remaja sekolah dan pekerja kantoran. Buka weekdays pagi hingga sore.",
+    "tahun_berdiri": 0,
+    "nama_pemilik": "Kak Niko",
+    "no_telepon": "",
+    "alamat_email": "",
+    "alamat": {
+      "nama_jalan": "Jl. Budi Utomo",
+      "nomor": "No.13",
+      "kota": "Jakarta Pusat",
+      "kode_pos": 10710,
+      "longitude": "-6.1674252",
+      "latitude": "106.8363919"
+    },
+    "operasional": [
+      {
+        "hari": "Senin",
+        "operasional": true,
+        "jam": "07:00-15:00"
+      },
+      {
+        "hari": "Selasa",
+        "operasional": true,
+        "jam": "07:00-15:00"
+      },
+      {
+        "hari": "Rabu",
+        "operasional": true,
+        "jam": "07:00-15:00"
+      },
+      {
+        "hari": "Kamis",
+        "operasional": true,
+        "jam": "07:00-15:00"
+      },
+      {
+        "hari": "Jumat",
+        "operasional": true,
+        "jam": "07:00-15:00"
+      },
+      {
+        "hari": "Sabtu",
+        "operasional": false,
+        "jam": "09:00-18:00"
+      },
+      {
+        "hari": "Minggu",
+        "operasional": false,
+        "jam": ""
+      }
+    ],
+    "nama_produk": [
+      {
+        "nama": "Es Kopi Sejuta Video",
+        "harga": 8000,
+        "foto": ""
+      },
+      {
+        "nama": "Es Kopi Butterscotch",
+        "harga": 10000,
+        "foto": ""
+      },
+      {
+        "nama": "Es Kopi Hazelnut",
+        "harga": 0,
+        "foto": ""
+      }
+    ],
+    "kategori": "",
+    "logo_umkm": "",
+    "gallery": [],
+    "video": "",
+    "sosial_media": ["@sejutajiwa.id"],
+    "ratings": 0,
+    "pembayaran": ["Cash", "Qris"],
+    "pengiriman": [],
+    "target_pelanggan": ["remaja sekolah", "pekerja kantoran"],
+    "tanggal_dibuat": {
+      "hari": "Rabu",
+      "tanggal": 22,
+      "bulan": "Oktober",
+      "tahun": 2025,
+      "jam": "17:08"
+    }
+  },
+  {
+    "nama_usaha": "Kartika Photocopy",
+    "jenis": "jasa",
+    "deskripsi": "usaha atk dan Photocopy",
+    "deskripsi_generated": "Kartika Photocopy menyediakan jasa fotokopi dan ATK terlengkap sejak 1987. Menawarkan berbagai alat tulis dan perlengkapan kantor dengan harga kompetitif.",
+    "tahun_berdiri": 1987,
+    "nama_pemilik": "Sriyanto",
+    "no_telepon": "0",
+    "alamat_email": "",
+    "alamat": {
+      "nama_jalan": "Jl. Budi Utomo",
+      "nomor": "No.9",
+      "kota": "Jakarta Pusat",
+      "kode_pos": 10710,
+      "longitude": "-6.1667827",
+      "latitude": "106.8384728"
+    },
+    "operasional": [
+      {
+        "hari": "Senin",
+        "operasional": true,
+        "jam": "07:30-16:00"
+      },
+      {
+        "hari": "Selasa",
+        "operasional": true,
+        "jam": "07:00-20:00"
+      },
+      {
+        "hari": "Rabu",
+        "operasional": true,
+        "jam": "07:00-20:00"
+      },
+      {
+        "hari": "Kamis",
+        "operasional": true,
+        "jam": "07:00-20:00"
+      },
+      {
+        "hari": "Jumat",
+        "operasional": true,
+        "jam": "07:00-20:00"
+      },
+      {
+        "hari": "Sabtu",
+        "operasional": true,
+        "jam": "09:00-18:00"
+      },
+      {
+        "hari": "Minggu",
+        "operasional": false,
+        "jam": ""
+      }
+    ],
+    "nama_produk": [
+      {
+        "nama": "Lakban Hitam 1 inch",
+        "harga": 12500,
+        "foto": ""
+      },
+      {
+        "nama": "Gembok Nishio",
+        "harga": 15000,
+        "foto": ""
+      },
+      {
+        "nama": "Pulpen Faster",
+        "harga": 5000,
+        "foto": ""
+      }
+    ],
+    "kategori": "",
+    "logo_umkm": "",
+    "gallery": [],
+    "video": "",
+    "sosial_media": [],
+    "ratings": 0,
+    "pembayaran": ["Qris", "Cash", "Transfer"],
+    "pengiriman": [],
+    "target_pelanggan": ["general"],
+    "tanggal_dibuat": {
+      "hari": "Rabu",
+      "tanggal": 22,
+      "bulan": "Oktober",
+      "tahun": 2025,
+      "jam": "15:40"
+    }
+  },
+  {
+    "nama_usaha": "Toko Dian",
+    "jenis": "toko kelontong",
+    "deskripsi": "",
+    "deskripsi_generated": "Toko Dian merupakan toko kelontong yang menyediakan kebutuhan sehari-hari sejak 1982. Buka pagi hingga sore dengan berbagai produk makanan dan minuman.",
+    "tahun_berdiri": 1982,
+    "nama_pemilik": "Arif",
+    "no_telepon": "0",
+    "alamat_email": "",
+    "alamat": {
+      "nama_jalan": "Jl. Budi Utomo",
+      "nomor": "No.9",
+      "kota": "Jakarta Pusat",
+      "kode_pos": 10710,
+      "longitude": "-6.1667827",
+      "latitude": "106.8384728"
+    },
+    "operasional": [
+      {
+        "hari": "Senin",
+        "operasional": true,
+        "jam": "05:00-16:00"
+      },
+      {
+        "hari": "Selasa",
+        "operasional": true,
+        "jam": "05:00-16:00"
+      },
+      {
+        "hari": "Rabu",
+        "operasional": true,
+        "jam": "05:00-16:00"
+      },
+      {
+        "hari": "Kamis",
+        "operasional": true,
+        "jam": "05:00-16:00"
+      },
+      {
+        "hari": "Jumat",
+        "operasional": true,
+        "jam": "05:00-16:00"
+      },
+      {
+        "hari": "Sabtu",
+        "operasional": true,
+        "jam": "05:00-16:00"
+      },
+      {
+        "hari": "Minggu",
+        "operasional": false,
+        "jam": ""
+      }
+    ],
+    "nama_produk": [
+      {
+        "nama": "Iwater",
+        "harga": 1000,
+        "foto": ""
+      },
+      {
+        "nama": "Indofood Racik Sayur Asem",
+        "harga": 2000,
+        "foto": ""
+      },
+      {
+        "nama": "Kapal Api",
+        "harga": 2000,
+        "foto": ""
+      }
+    ],
+    "kategori": "",
+    "logo_umkm": "",
+    "gallery": [],
+    "video": "",
+    "sosial_media": [],
+    "ratings": 0,
+    "pembayaran": ["Cash", "Qris"],
+    "pengiriman": [],
+    "target_pelanggan": ["remaja", "umum"],
+    "tanggal_dibuat": {
+      "hari": "Rabu",
+      "tanggal": 22,
+      "bulan": "Oktober",
+      "tahun": 2025,
+      "jam": "15:30"
+    }
+  },
+  {
+    "nama_usaha": "Katen Susu Mba Aam",
+    "jenis": "f&b",
+    "deskripsi": "",
+    "deskripsi_generated": "Katen Susu Mba Aam menyajikan ketan susu dan minuman segar untuk dinikmati sore hingga malam. Tempat nongkrong yang cozy dengan harga terjangkau.",
+    "tahun_berdiri": 2025,
+    "nama_pemilik": "Sugiarti",
+    "no_telepon": "0",
+    "alamat_email": "",
+    "alamat": {
+      "nama_jalan": "Jl. Lapangan Pors",
+      "nomor": "No.6, RT.6/RW.4",
+      "kota": "Jakarta Pusat",
+      "kode_pos": 10650,
+      "longitude": "-6.1624509",
+      "latitude": "106.8606462"
+    },
+    "operasional": [
+      {
+        "hari": "Senin",
+        "operasional": true,
+        "jam": "16:00-22:00"
+      },
+      {
+        "hari": "Selasa",
+        "operasional": true,
+        "jam": "16:00-22:00"
+      },
+      {
+        "hari": "Rabu",
+        "operasional": true,
+        "jam": "16:00-22:00"
+      },
+      {
+        "hari": "Kamis",
+        "operasional": true,
+        "jam": "16:00-22:00"
+      },
+      {
+        "hari": "Jumat",
+        "operasional": true,
+        "jam": "16:00-22:00"
+      },
+      {
+        "hari": "Sabtu",
+        "operasional": true,
+        "jam": "16:00-22:00"
+      },
+      {
+        "hari": "Minggu",
+        "operasional": true,
+        "jam": "16:00-22:00"
+      }
+    ],
+    "nama_produk": [
+      {
+        "nama": "Es Teh Manis Ijo",
+        "harga": 5000,
+        "foto": ""
+      },
+      {
+        "nama": "Ketan Abon",
+        "harga": 10000,
+        "foto": ""
+      },
+      {
+        "nama": "Ketan Keju Susu Reguler",
+        "harga": 0,
+        "foto": ""
+      }
+    ],
+    "kategori": "",
+    "logo_umkm": "",
+    "gallery": [],
+    "video": "",
+    "sosial_media": [],
+    "ratings": 0,
+    "pembayaran": ["Qris", "Cash"],
+    "pengiriman": [],
+    "target_pelanggan": ["general"],
+    "tanggal_dibuat": {
+      "hari": "Kamis",
+      "tanggal": 24,
+      "bulan": "Oktober",
+      "tahun": 2025,
+      "jam": "17:10"
+    }
+  },
+  {
+    "nama_usaha": "Nasi Goreng Sedap Malam",
+    "jenis": "f&b",
+    "deskripsi": "",
+    "deskripsi_generated": "Nasi Goreng Sedap Malam menghidangkan berbagai menu nasi goreng, mie goreng, dan bihun goreng yang lezat. Buka dari sore hingga dini hari.",
+    "tahun_berdiri": 2016,
+    "nama_pemilik": "Waryono",
+    "no_telepon": "085717448332",
+    "alamat_email": "",
+    "alamat": {
+      "nama_jalan": "Jl. Utan Panjang 3",
+      "nomor": "No. 9",
+      "kota": "Jakarta Pusat",
+      "kode_pos": 10640,
+      "longitude": "-6.1681812",
+      "latitude": "106.8461867"
+    },
+    "operasional": [
+      {
+        "hari": "Senin",
+        "operasional": true,
+        "jam": "16:00-02:00"
+      },
+      {
+        "hari": "Selasa",
+        "operasional": true,
+        "jam": "16:00-02:00"
+      },
+      {
+        "hari": "Rabu",
+        "operasional": true,
+        "jam": "16:00-02:00"
+      },
+      {
+        "hari": "Kamis",
+        "operasional": true,
+        "jam": "16:00-02:00"
+      },
+      {
+        "hari": "Jumat",
+        "operasional": true,
+        "jam": "16:00-02:00"
+      },
+      {
+        "hari": "Sabtu",
+        "operasional": true,
+        "jam": "16:00-02:00"
+      },
+      {
+        "hari": "Minggu",
+        "operasional": true,
+        "jam": "16:00-02:00"
+      }
+    ],
+    "nama_produk": [
+      {
+        "nama": "Nasi Goreng Ayam",
+        "harga": 20000,
+        "foto": ""
+      },
+      {
+        "nama": "Mie Goreng",
+        "harga": 15000,
+        "foto": ""
+      },
+      {
+        "nama": "Bihun Goreng",
+        "harga": 14000,
+        "foto": ""
+      }
+    ],
+    "kategori": "",
+    "logo_umkm": "",
+    "gallery": [],
+    "video": "",
+    "sosial_media": [],
+    "ratings": 4.7,
+    "pembayaran": ["Qris", "Cash"],
+    "pengiriman": ["take in", "delivery"],
+    "target_pelanggan": [],
+    "tanggal_dibuat": {
+      "hari": "Jumat",
+      "tanggal": 25,
+      "bulan": "Oktober",
+      "tahun": 2025,
+      "jam": "17:00"
+    }
+  },
+  {
+    "nama_usaha": "Rm. Green Vill Raya",
+    "jenis": "f&b",
+    "deskripsi": "",
+    "deskripsi_generated": "Rm. Green Vill Raya menyajikan masakan rumahan dengan spesialisasi ayam bakar, ayam goreng, dan gulai ikan. Cocok untuk keluarga dan kelompok.",
+    "tahun_berdiri": 2018,
+    "nama_pemilik": "Ali Adi Setiyan",
+    "no_telepon": "085100878772",
+    "alamat_email": "",
+    "alamat": {
+      "nama_jalan": "Jl. Budi Utomo",
+      "nomor": "No.9",
+      "kota": "Jakarta Pusat",
+      "kode_pos": 10710,
+      "longitude": "-6.1668641",
+      "latitude": "106.8359485"
+    },
+    "operasional": [
+      {
+        "hari": "Senin",
+        "operasional": true,
+        "jam": "07:00-20:00"
+      },
+      {
+        "hari": "Selasa",
+        "operasional": true,
+        "jam": "07:00-20:00"
+      },
+      {
+        "hari": "Rabu",
+        "operasional": true,
+        "jam": "07:00-20:00"
+      },
+      {
+        "hari": "Kamis",
+        "operasional": true,
+        "jam": "07:00-20:00"
+      },
+      {
+        "hari": "Jumat",
+        "operasional": true,
+        "jam": "07:00-20:00"
+      },
+      {
+        "hari": "Sabtu",
+        "operasional": true,
+        "jam": "07:00-20:00"
+      },
+      {
+        "hari": "Minggu",
+        "operasional": true,
+        "jam": "07:00-20:00"
+      }
+    ],
+    "nama_produk": [
+      {
+        "nama": "Ayam Bakar",
+        "harga": 25000,
+        "foto": ""
+      },
+      {
+        "nama": "Ayam Goreng",
+        "harga": 27000,
+        "foto": ""
+      },
+      {
+        "nama": "Gulai Ikan",
+        "harga": 30000,
+        "foto": ""
+      }
+    ],
+    "kategori": "",
+    "logo_umkm": "",
+    "gallery": [],
+    "video": "",
+    "sosial_media": [],
+    "ratings": 4.4,
+    "pembayaran": ["Cash"],
+    "pengiriman": ["take in", "delivery"],
+    "target_pelanggan": ["general", "group"],
+    "tanggal_dibuat": {
+      "hari": "Sabtu",
+      "tanggal": 26,
+      "bulan": "Oktober",
+      "tahun": 2025,
+      "jam": "14:00"
+    }
+  },
+  {
+    "nama_usaha": "Citra Photocopy",
+    "jenis": "jasa",
+    "deskripsi": "",
+    "deskripsi_generated": "Citra Photocopy memberikan layanan fotokopi dan ATK 24 jam dengan harga terjangkau. Lengkap dengan berbagai kebutuhan alat tulis dan percetakan.",
+    "tahun_berdiri": 2020,
+    "nama_pemilik": "Citra",
+    "no_telepon": "082111076484",
+    "alamat_email": "",
+    "alamat": {
+      "nama_jalan": "Jl. Taruna Raya",
+      "nomor": "No.3 RT.3/RW.3",
+      "kota": "Jakarta Pusat",
+      "kode_pos": 10650,
+      "longitude": "-6.1603814",
+      "latitude": "106.8585098"
+    },
+    "operasional": [
+      {
+        "hari": "Senin",
+        "operasional": true,
+        "jam": "06:00-24:00"
+      },
+      {
+        "hari": "Selasa",
+        "operasional": true,
+        "jam": "06:00-24:00"
+      },
+      {
+        "hari": "Rabu",
+        "operasional": true,
+        "jam": "06:00-24:00"
+      },
+      {
+        "hari": "Kamis",
+        "operasional": true,
+        "jam": "06:00-24:00"
+      },
+      {
+        "hari": "Jumat",
+        "operasional": true,
+        "jam": "06:00-24:00"
+      },
+      {
+        "hari": "Sabtu",
+        "operasional": true,
+        "jam": "06:00-24:00"
+      },
+      {
+        "hari": "Minggu",
+        "operasional": true,
+        "jam": "06:00-24:00"
+      }
+    ],
+    "nama_produk": [
+      {
+        "nama": "Karton",
+        "harga": 5000,
+        "foto": ""
+      },
+      {
+        "nama": "Pulpen Joyko",
+        "harga": 7000,
+        "foto": ""
+      },
+      {
+        "nama": "Print",
+        "harga": 2000,
+        "foto": ""
+      }
+    ],
+    "kategori": "",
+    "logo_umkm": "",
+    "gallery": [],
+    "video": "",
+    "sosial_media": [],
+    "ratings": 5,
+    "pembayaran": ["Cash", "Qris"],
+    "pengiriman": ["take in"],
+    "target_pelanggan": ["general", "remaja sekolah"],
+    "tanggal_dibuat": {
+      "hari": "Minggu",
+      "tanggal": 27,
+      "bulan": "Oktober",
+      "tahun": 2025,
+      "jam": "15:40"
+    }
+  },
+  {
+    "nama_usaha": "SGER Serdang Baru",
+    "jenis": "f&b",
+    "deskripsi": "",
+    "deskripsi_generated": "SGER Serdang Baru menawarkan minuman kekinian seperti jeruk genit, thai tea, dan es kopi gula aren. Tempat nongkrong yang nyaman sepanjang hari.",
+    "tahun_berdiri": 2022,
+    "nama_pemilik": "Danis Maulana",
+    "no_telepon": "081212201168",
+    "alamat_email": "",
+    "alamat": {
+      "nama_jalan": "Jl.Serdang Baru",
+      "nomor": "No. 27 RT.2/RT.5",
+      "kota": "Jakarta Pusat",
+      "kode_pos": 10650,
+      "longitude": "0",
+      "latitude": "0"
+    },
+    "operasional": [
+      {
+        "hari": "Senin",
+        "operasional": true,
+        "jam": "10:00-21:00"
+      },
+      {
+        "hari": "Selasa",
+        "operasional": true,
+        "jam": "10:00-21:00"
+      },
+      {
+        "hari": "Rabu",
+        "operasional": true,
+        "jam": "10:00-21:00"
+      },
+      {
+        "hari": "Kamis",
+        "operasional": true,
+        "jam": "10:00-21:00"
+      },
+      {
+        "hari": "Jumat",
+        "operasional": true,
+        "jam": "10:00-21:00"
+      },
+      {
+        "hari": "Sabtu",
+        "operasional": true,
+        "jam": "10:00-21:00"
+      },
+      {
+        "hari": "Minggu",
+        "operasional": true,
+        "jam": "10:00-21:00"
+      }
+    ],
+    "nama_produk": [
+      {
+        "nama": "Jeruk Genit",
+        "harga": 8000,
+        "foto": ""
+      },
+      {
+        "nama": "Thai Tea Baper",
+        "harga": 10000,
+        "foto": ""
+      },
+      {
+        "nama": "Es Kopi Gula Aren",
+        "harga": 12000,
+        "foto": ""
+      }
+    ],
+    "kategori": "",
+    "logo_umkm": "",
+    "gallery": [],
+    "video": "",
+    "sosial_media": [],
+    "ratings": 4.5,
+    "pembayaran": ["Cash", "Qris"],
+    "pengiriman": ["delivery", "take in"],
+    "target_pelanggan": ["general"],
+    "tanggal_dibuat": {
+      "hari": "Senin",
+      "tanggal": 28,
+      "bulan": "Oktober",
+      "tahun": 2025,
+      "jam": "19:20"
+    }
+  },
+  {
+    "nama_usaha": "Hisana Bendungan Jago 1",
+    "jenis": "f&b",
+    "deskripsi": "",
+    "deskripsi_generated": "Hisana Bendungan Jago 1 menghidangkan menu ayam cebar, geprek, dan goreng dengan nasi. Restoran keluarga yang buka dari pagi hingga malam.",
+    "tahun_berdiri": 2016,
+    "nama_pemilik": "-",
+    "no_telepon": "08958075242",
+    "alamat_email": "",
+    "alamat": {
+      "nama_jalan": "Jl. Bendungan Jago Raya",
+      "nomor": "RT.5/RW.3",
+      "kota": "Jakarta Pusat",
+      "kode_pos": 10650,
+      "longitude": "6.1616296",
+      "latitude": "106.84237"
+    },
+    "operasional": [
+      {
+        "hari": "Senin",
+        "operasional": true,
+        "jam": "06:00-22:00"
+      },
+      {
+        "hari": "Selasa",
+        "operasional": true,
+        "jam": "06:00-22:00"
+      },
+      {
+        "hari": "Rabu",
+        "operasional": true,
+        "jam": "06:00-22:00"
+      },
+      {
+        "hari": "Kamis",
+        "operasional": true,
+        "jam": "06:00-22:00"
+      },
+      {
+        "hari": "Jumat",
+        "operasional": true,
+        "jam": "06:00-22:00"
+      },
+      {
+        "hari": "Sabtu",
+        "operasional": true,
+        "jam": "06:00-22:00"
+      },
+      {
+        "hari": "Minggu",
+        "operasional": true,
+        "jam": "06:00-22:00"
+      }
+    ],
+    "nama_produk": [
+      {
+        "nama": "Ayam Cebar (Celup Bakar)",
+        "harga": 12000,
+        "foto": ""
+      },
+      {
+        "nama": "Paket Geprek Sayap",
+        "harga": 17000,
+        "foto": ""
+      },
+      {
+        "nama": "Ayam Goreng Dada + Nasi",
+        "harga": 16000,
+        "foto": ""
+      }
+    ],
+    "kategori": "",
+    "logo_umkm": "",
+    "gallery": [],
+    "video": "",
+    "sosial_media": [],
+    "ratings": 4.5,
+    "pembayaran": ["Cash"],
+    "pengiriman": ["take in", "delivery"],
+    "target_pelanggan": ["general", "keluarga"],
+    "tanggal_dibuat": {
+      "hari": "Senin",
+      "tanggal": 28,
+      "bulan": "Oktober",
+      "tahun": 2025,
+      "jam": "13:20"
+    }
+  },
+  {
+    "nama_usaha": "B.O.S Laundry",
+    "jenis": "jasa",
+    "deskripsi": "",
+    "deskripsi_generated": "B.O.S Laundry memberikan layanan laundry kiloan 1 hari selesai, setrika kilat, dan shoes cleaning. Layanan 24 jam untuk kebutuhan keluarga.",
+    "tahun_berdiri": 2022,
+    "nama_pemilik": "Yudha Al Janata",
+    "no_telepon": "081218969929",
+    "alamat_email": "",
+    "alamat": {
+      "nama_jalan": "Jl. Serdang Baru Raya",
+      "nomor": "No. 43C ",
+      "kota": "Jakarta Pusat",
+      "kode_pos": 10640,
+      "longitude": "-6.1598436",
+      "latitude": "106.8425655"
+    },
+    "operasional": [
+      {
+        "hari": "Senin",
+        "operasional": true,
+        "jam": "00:00-24:00"
+      },
+      {
+        "hari": "Selasa",
+        "operasional": true,
+        "jam": "00:00-24:00"
+      },
+      {
+        "hari": "Rabu",
+        "operasional": true,
+        "jam": "00:00-24:00"
+      },
+      {
+        "hari": "Kamis",
+        "operasional": true,
+        "jam": "00:00-24:00"
+      },
+      {
+        "hari": "Jumat",
+        "operasional": true,
+        "jam": "00:00-24:00"
+      },
+      {
+        "hari": "Sabtu",
+        "operasional": true,
+        "jam": "00:00-24:00"
+      },
+      {
+        "hari": "Minggu",
+        "operasional": true,
+        "jam": "00:00-24:00"
+      }
+    ],
+    "nama_produk": [
+      {
+        "nama": "Kiloan 1 Hari Selesai",
+        "harga": 7000,
+        "foto": ""
+      },
+      {
+        "nama": "Setrika 4 Jam Selesai",
+        "harga": 9000,
+        "foto": ""
+      },
+      {
+        "nama": "Shoes Cleaning",
+        "harga": 45000,
+        "foto": ""
+      }
+    ],
+    "kategori": "",
+    "logo_umkm": "",
+    "gallery": [],
+    "video": "",
+    "sosial_media": ["@bos_laundry"],
+    "ratings": 4.9,
+    "pembayaran": ["Cash"],
+    "pengiriman": ["delivery", "take in"],
+    "target_pelanggan": ["keluarga"],
+    "tanggal_dibuat": {
+      "hari": "Selasa",
+      "tanggal": 29,
+      "bulan": "Oktober",
+      "tahun": 2025,
+      "jam": "17:08"
+    }
+  },
+  {
+    "nama_usaha": "Foto Copy Annisa Digital Printing",
+    "jenis": "jasa",
+    "deskripsi": "",
+    "deskripsi_generated": "Foto Copy Annisa Digital Printing menyediakan jasa print, fotokopi, dan ATK dengan harga murah. Terbuka dari pagi hingga malam untuk remaja sekolah.",
+    "tahun_berdiri": 2021,
+    "nama_pemilik": "Annisa",
+    "no_telepon": "081296121404",
+    "alamat_email": "",
+    "alamat": {
+      "nama_jalan": "Jl. Harapan Jaya Raya",
+      "nomor": "No.2 RT.3/RW.4",
+      "kota": "Jakarta Pusat",
+      "kode_pos": 10640,
+      "longitude": "-6.1684087",
+      "latitude": "106.8630923"
+    },
+    "operasional": [
+      {
+        "hari": "Senin",
+        "operasional": true,
+        "jam": "05:50-21:30"
+      },
+      {
+        "hari": "Selasa",
+        "operasional": true,
+        "jam": "05:50-21:30"
+      },
+      {
+        "hari": "Rabu",
+        "operasional": true,
+        "jam": "05:50-21:30"
+      },
+      {
+        "hari": "Kamis",
+        "operasional": true,
+        "jam": "05:50-21:30"
+      },
+      {
+        "hari": "Jumat",
+        "operasional": true,
+        "jam": "05:50-21:30"
+      },
+      {
+        "hari": "Sabtu",
+        "operasional": true,
+        "jam": "05:50-21:30"
+      },
+      {
+        "hari": "Minggu",
+        "operasional": true,
+        "jam": "05:50-21:30"
+      }
+    ],
+    "nama_produk": [
+      {
+        "nama": "Print",
+        "harga": 1000,
+        "foto": ""
+      },
+      {
+        "nama": "Double Tip",
+        "harga": 4000,
+        "foto": ""
+      },
+      {
+        "nama": "Penggaris 30cm",
+        "harga": 5000,
+        "foto": ""
+      }
+    ],
+    "kategori": "",
+    "logo_umkm": "",
+    "gallery": [],
+    "video": "",
+    "sosial_media": [],
+    "ratings": 4.1,
+    "pembayaran": ["Cash", "Qris"],
+    "pengiriman": ["take in"],
+    "target_pelanggan": ["remaja sekolah"],
+    "tanggal_dibuat": {
+      "hari": "Rabu",
+      "tanggal": 30,
+      "bulan": "Oktober",
+      "tahun": 2025,
+      "jam": "16:20"
+    }
+  }
+]
