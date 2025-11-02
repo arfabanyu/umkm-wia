@@ -13,16 +13,16 @@
       "kota": "Jakarta Selatan",
       "kode_pos": 12780,
       "longitude": 106.8456,
-      "altitude": -6.25
+      "latitude": -6.25
     },
     "operasional": [
-      { "hari": "senin", "operasional": true, "jam": "08:00-22:00" },
-      { "hari": "selasa", "operasional": true, "jam": "08:00-22:00" },
-      { "hari": "rabu", "operasional": true, "jam": "08:00-22:00" },
-      { "hari": "kamis", "operasional": true, "jam": "08:00-22:00" },
-      { "hari": "jumat", "operasional": true, "jam": "08:00-23:00" },
-      { "hari": "sabtu", "operasional": true, "jam": "09:00-23:00" },
-      { "hari": "minggu", "operasional": false, "jam": "" }
+      { "hari": "Senin", "operasional": true, "jam": "08:00-22:00" },
+      { "hari": "Selasa", "operasional": true, "jam": "08:00-22:00" },
+      { "hari": "Rabu", "operasional": true, "jam": "08:00-22:00" },
+      { "hari": "Kamis", "operasional": true, "jam": "08:00-22:00" },
+      { "hari": "Jumat", "operasional": true, "jam": "08:00-23:00" },
+      { "hari": "Sabtu", "operasional": true, "jam": "09:00-23:00" },
+      { "hari": "Minggu", "operasional": false, "jam": "" }
     ],
     "nama_produk": [
       {
@@ -43,7 +43,7 @@
     ],
     "kategori": "Minuman/Kopi",
     "logo_umkm": "logo/kopisenja.png",
-    "galery": ["galeri/kopi1.jpg", "galeri/kopi2.jpg", "galeri/kopi3.jpg"],
+    "gallery": ["galeri/kopi1.jpg", "galeri/kopi2.jpg", "galeri/kopi3.jpg"],
     "video": "video/kopisenja-intro.mp4",
     "sosial_media": { "instagram": "@kopisenja.id", "twitter": "" },
     "ratings": { "rata_rata": 4.7, "jumlah_review": 150 },
@@ -71,16 +71,16 @@
       "kota": "Depok",
       "kode_pos": 16411,
       "longitude": 106.8229,
-      "altitude": -6.397
+      "latitude": -6.397
     },
     "operasional": [
-      { "hari": "senin", "operasional": true, "jam": "10:00-21:00" },
-      { "hari": "selasa", "operasional": true, "jam": "10:00-21:00" },
-      { "hari": "rabu", "operasional": true, "jam": "10:00-21:00" },
-      { "hari": "kamis", "operasional": true, "jam": "10:00-21:00" },
-      { "hari": "jumat", "operasional": true, "jam": "13:00-21:00" },
-      { "hari": "sabtu", "operasional": true, "jam": "10:00-22:00" },
-      { "hari": "minggu", "operasional": true, "jam": "10:00-22:00" }
+      { "hari": "Senin", "operasional": true, "jam": "10:00-21:00" },
+      { "hari": "Selasa", "operasional": true, "jam": "10:00-21:00" },
+      { "hari": "Rabu", "operasional": true, "jam": "10:00-21:00" },
+      { "hari": "Kamis", "operasional": true, "jam": "10:00-21:00" },
+      { "hari": "Jumat", "operasional": true, "jam": "13:00-21:00" },
+      { "hari": "Sabtu", "operasional": true, "jam": "10:00-22:00" },
+      { "hari": "Minggu", "operasional": true, "jam": "10:00-22:00" }
     ],
     "nama_produk": [
       {
@@ -101,7 +101,7 @@
     ],
     "kategori": "Makanan",
     "logo_umkm": "logo/baksolima.png",
-    "galery": ["galeri/bakso1.jpg", "galeri/bakso2.jpg", "galeri/bakso3.jpg"],
+    "gallery": ["galeri/bakso1.jpg", "galeri/bakso2.jpg", "galeri/bakso3.jpg"],
     "video": "video/bakso-review.mp4",
     "sosial_media": {
       "instagram": "@baksolimalegend",
@@ -132,16 +132,16 @@
       "kota": "Depok",
       "kode_pos": 16423,
       "longitude": 106.8315,
-      "altitude": -6.367
+      "latitude": -6.367
     },
     "operasional": [
-      { "hari": "senin", "operasional": true, "jam": "18:00-00:00" },
-      { "hari": "selasa", "operasional": true, "jam": "18:00-00:00" },
-      { "hari": "rabu", "operasional": true, "jam": "18:00-00:00" },
-      { "hari": "kamis", "operasional": true, "jam": "18:00-00:00" },
-      { "hari": "jumat", "operasional": true, "jam": "18:00-01:00" },
-      { "hari": "sabtu", "operasional": true, "jam": "18:00-01:00" },
-      { "hari": "minggu", "operasional": false, "jam": "" }
+      { "hari": "Senin", "operasional": true, "jam": "18:00-00:00" },
+      { "hari": "Selasa", "operasional": true, "jam": "18:00-00:00" },
+      { "hari": "Rabu", "operasional": true, "jam": "18:00-00:00" },
+      { "hari": "Kamis", "operasional": true, "jam": "18:00-00:00" },
+      { "hari": "Jumat", "operasional": true, "jam": "18:00-01:00" },
+      { "hari": "Sabtu", "operasional": true, "jam": "18:00-01:00" },
+      { "hari": "Minggu", "operasional": false, "jam": "" }
     ],
     "nama_produk": [
       {
@@ -162,7 +162,7 @@
     ],
     "kategori": "Makanan",
     "logo_umkm": "logo/rotiviral.png",
-    "galery": ["galeri/roti1.jpg", "galeri/roti2.jpg"],
+    "gallery": ["galeri/roti1.jpg", "galeri/roti2.jpg"],
     "video": "",
     "sosial_media": { "instagram": "@rotimantu", "tiktok": "rotimantu.viral" },
     "ratings": { "rata_rata": 4.9, "jumlah_review": 98 },
@@ -190,16 +190,16 @@
       "kota": "Tangerang Selatan",
       "kode_pos": 15412,
       "longitude": 106.7583,
-      "altitude": -6.3115
+      "latitude": -6.3115
     },
     "operasional": [
-      { "hari": "senin", "operasional": true, "jam": "09:00-20:00" },
-      { "hari": "selasa", "operasional": true, "jam": "09:00-20:00" },
-      { "hari": "rabu", "operasional": true, "jam": "09:00-20:00" },
-      { "hari": "kamis", "operasional": true, "jam": "09:00-20:00" },
-      { "hari": "jumat", "operasional": true, "jam": "09:00-20:00" },
-      { "hari": "sabtu", "operasional": true, "jam": "09:00-21:00" },
-      { "hari": "minggu", "operasional": false, "jam": "" }
+      { "hari": "Senin", "operasional": true, "jam": "09:00-20:00" },
+      { "hari": "Selasa", "operasional": true, "jam": "09:00-20:00" },
+      { "hari": "Rabu", "operasional": true, "jam": "09:00-20:00" },
+      { "hari": "Kamis", "operasional": true, "jam": "09:00-20:00" },
+      { "hari": "Jumat", "operasional": true, "jam": "09:00-20:00" },
+      { "hari": "Sabtu", "operasional": true, "jam": "09:00-21:00" },
+      { "hari": "Minggu", "operasional": false, "jam": "" }
     ],
     "nama_produk": [
       {
@@ -216,7 +216,7 @@
     ],
     "kategori": "Jasa",
     "logo_umkm": "logo/barberbudi.png",
-    "galery": ["galeri/barber1.jpg", "galeri/barber2.jpg"],
+    "gallery": ["galeri/barber1.jpg", "galeri/barber2.jpg"],
     "video": "",
     "sosial_media": { "instagram": "@pangkasbudi" },
     "ratings": { "rata_rata": 4.8, "jumlah_review": 120 },
@@ -244,16 +244,16 @@
       "kota": "Bogor",
       "kode_pos": 16710,
       "longitude": 106.815,
-      "altitude": -6.6
+      "latitude": -6.6
     },
     "operasional": [
-      { "hari": "senin", "operasional": true, "jam": "09:00-17:00" },
-      { "hari": "selasa", "operasional": true, "jam": "09:00-17:00" },
-      { "hari": "rabu", "operasional": true, "jam": "09:00-17:00" },
-      { "hari": "kamis", "operasional": true, "jam": "09:00-17:00" },
-      { "hari": "jumat", "operasional": true, "jam": "09:00-17:00" },
-      { "hari": "sabtu", "operasional": true, "jam": "09:00-14:00" },
-      { "hari": "minggu", "operasional": false, "jam": "" }
+      { "hari": "Senin", "operasional": true, "jam": "09:00-17:00" },
+      { "hari": "Selasa", "operasional": true, "jam": "09:00-17:00" },
+      { "hari": "Rabu", "operasional": true, "jam": "09:00-17:00" },
+      { "hari": "Kamis", "operasional": true, "jam": "09:00-17:00" },
+      { "hari": "Jumat", "operasional": true, "jam": "09:00-17:00" },
+      { "hari": "Sabtu", "operasional": true, "jam": "09:00-14:00" },
+      { "hari": "Minggu", "operasional": false, "jam": "" }
     ],
     "nama_produk": [
       {
@@ -274,7 +274,7 @@
     ],
     "kategori": "Ritel",
     "logo_umkm": "logo/endangrotan.png",
-    "galery": ["galeri/rotan1.jpg", "galeri/rotan2.jpg", "galeri/rotan3.jpg"],
+    "gallery": ["galeri/rotan1.jpg", "galeri/rotan2.jpg", "galeri/rotan3.jpg"],
     "video": "video/rotan-proses.mp4",
     "sosial_media": { "website": "www.rotanendang.com" },
     "ratings": { "rata_rata": 4.6, "jumlah_review": 65 },
@@ -302,16 +302,16 @@
       "kota": "Jakarta Selatan",
       "kode_pos": 12820,
       "longitude": 106.8375,
-      "altitude": -6.2378
+      "latitude": -6.2378
     },
     "operasional": [
-      { "hari": "senin", "operasional": true, "jam": "17:00-23:00" },
-      { "hari": "selasa", "operasional": true, "jam": "17:00-23:00" },
-      { "hari": "rabu", "operasional": true, "jam": "17:00-23:00" },
-      { "hari": "kamis", "operasional": true, "jam": "17:00-23:00" },
-      { "hari": "jumat", "operasional": true, "jam": "17:00-00:00" },
-      { "hari": "sabtu", "operasional": true, "jam": "17:00-00:00" },
-      { "hari": "minggu", "operasional": true, "jam": "17:00-23:00" }
+      { "hari": "Senin", "operasional": true, "jam": "17:00-23:00" },
+      { "hari": "Selasa", "operasional": true, "jam": "17:00-23:00" },
+      { "hari": "Rabu", "operasional": true, "jam": "17:00-23:00" },
+      { "hari": "Kamis", "operasional": true, "jam": "17:00-23:00" },
+      { "hari": "Jumat", "operasional": true, "jam": "17:00-00:00" },
+      { "hari": "Sabtu", "operasional": true, "jam": "17:00-00:00" },
+      { "hari": "Minggu", "operasional": true, "jam": "17:00-23:00" }
     ],
     "nama_produk": [
       {
@@ -332,7 +332,7 @@
     ],
     "kategori": "Makanan",
     "logo_umkm": "logo/satepetir.png",
-    "galery": ["galeri/sate1.jpg", "galeri/sate2.jpg"],
+    "gallery": ["galeri/sate1.jpg", "galeri/sate2.jpg"],
     "video": "",
     "sosial_media": { "instagram": "@satepadangpetir" },
     "ratings": { "rata_rata": 4.4, "jumlah_review": 210 },
@@ -360,16 +360,16 @@
       "kota": "Bandung",
       "kode_pos": 40135,
       "longitude": 107.6191,
-      "altitude": -6.9175
+      "latitude": -6.9175
     },
     "operasional": [
-      { "hari": "senin", "operasional": true, "jam": "10:00-20:00" },
-      { "hari": "selasa", "operasional": true, "jam": "10:00-20:00" },
-      { "hari": "rabu", "operasional": true, "jam": "10:00-20:00" },
-      { "hari": "kamis", "operasional": true, "jam": "10:00-20:00" },
-      { "hari": "jumat", "operasional": true, "jam": "10:00-21:00" },
-      { "hari": "sabtu", "operasional": true, "jam": "10:00-21:00" },
-      { "hari": "minggu", "operasional": false, "jam": "" }
+      { "hari": "Senin", "operasional": true, "jam": "10:00-20:00" },
+      { "hari": "Selasa", "operasional": true, "jam": "10:00-20:00" },
+      { "hari": "Rabu", "operasional": true, "jam": "10:00-20:00" },
+      { "hari": "Kamis", "operasional": true, "jam": "10:00-20:00" },
+      { "hari": "Jumat", "operasional": true, "jam": "10:00-21:00" },
+      { "hari": "Sabtu", "operasional": true, "jam": "10:00-21:00" },
+      { "hari": "Minggu", "operasional": false, "jam": "" }
     ],
     "nama_produk": [
       {
@@ -390,7 +390,7 @@
     ],
     "kategori": "Ritel",
     "logo_umkm": "logo/distroindie.png",
-    "galery": ["galeri/distro1.jpg", "galeri/distro2.jpg"],
+    "gallery": ["galeri/distro1.jpg", "galeri/distro2.jpg"],
     "video": "video/distro-tour.mp4",
     "sosial_media": {
       "instagram": "@kaosindie_bdg",
@@ -421,16 +421,16 @@
       "kota": "Jakarta Timur",
       "kode_pos": 13730,
       "longitude": 106.878,
-      "altitude": -6.321
+      "latitude": -6.321
     },
     "operasional": [
-      { "hari": "senin", "operasional": true, "jam": "07:00-21:00" },
-      { "hari": "selasa", "operasional": true, "jam": "07:00-21:00" },
-      { "hari": "rabu", "operasional": true, "jam": "07:00-21:00" },
-      { "hari": "kamis", "operasional": true, "jam": "07:00-21:00" },
-      { "hari": "jumat", "operasional": true, "jam": "07:00-21:00" },
-      { "hari": "sabtu", "operasional": true, "jam": "07:00-20:00" },
-      { "hari": "minggu", "operasional": true, "jam": "09:00-17:00" }
+      { "hari": "Senin", "operasional": true, "jam": "07:00-21:00" },
+      { "hari": "Selasa", "operasional": true, "jam": "07:00-21:00" },
+      { "hari": "Rabu", "operasional": true, "jam": "07:00-21:00" },
+      { "hari": "Kamis", "operasional": true, "jam": "07:00-21:00" },
+      { "hari": "Jumat", "operasional": true, "jam": "07:00-21:00" },
+      { "hari": "Sabtu", "operasional": true, "jam": "07:00-20:00" },
+      { "hari": "Minggu", "operasional": true, "jam": "09:00-17:00" }
     ],
     "nama_produk": [
       { "nama": "Cuci Kering Lipat (per kg)", "harga": 8000, "foto": "" },
@@ -439,7 +439,7 @@
     ],
     "kategori": "Jasa",
     "logo_umkm": "logo/laundry.png",
-    "galery": ["galeri/laundry1.jpg", "galeri/laundry2.jpg"],
+    "gallery": ["galeri/laundry1.jpg", "galeri/laundry2.jpg"],
     "video": "",
     "sosial_media": { "whatsapp": "6287899887766" },
     "ratings": { "rata_rata": 4.3, "jumlah_review": 75 },
@@ -467,16 +467,16 @@
       "kota": "Bekasi",
       "kode_pos": 17121,
       "longitude": 107.002,
-      "altitude": -6.23
+      "latitude": -6.23
     },
     "operasional": [
-      { "hari": "senin", "operasional": true, "jam": "16:00-23:00" },
-      { "hari": "selasa", "operasional": true, "jam": "16:00-23:00" },
-      { "hari": "rabu", "operasional": true, "jam": "16:00-23:00" },
-      { "hari": "kamis", "operasional": true, "jam": "16:00-23:00" },
-      { "hari": "jumat", "operasional": true, "jam": "16:00-00:00" },
-      { "hari": "sabtu", "operasional": true, "jam": "16:00-00:00" },
-      { "hari": "minggu", "operasional": true, "jam": "16:00-23:00" }
+      { "hari": "Senin", "operasional": true, "jam": "16:00-23:00" },
+      { "hari": "Selasa", "operasional": true, "jam": "16:00-23:00" },
+      { "hari": "Rabu", "operasional": true, "jam": "16:00-23:00" },
+      { "hari": "Kamis", "operasional": true, "jam": "16:00-23:00" },
+      { "hari": "Jumat", "operasional": true, "jam": "16:00-00:00" },
+      { "hari": "Sabtu", "operasional": true, "jam": "16:00-00:00" },
+      { "hari": "Minggu", "operasional": true, "jam": "16:00-23:00" }
     ],
     "nama_produk": [
       {
@@ -497,7 +497,7 @@
     ],
     "kategori": "Makanan",
     "logo_umkm": "logo/martabaksultan.png",
-    "galery": ["galeri/martabak1.jpg", "galeri/martabak2.jpg"],
+    "gallery": ["galeri/martabak1.jpg", "galeri/martabak2.jpg"],
     "video": "",
     "sosial_media": { "instagram": "@martabaksultan" },
     "ratings": { "rata_rata": 4.6, "jumlah_review": 180 },
@@ -525,16 +525,16 @@
       "kota": "Depok",
       "kode_pos": 16425,
       "longitude": 106.84,
-      "altitude": -6.375
+      "latitude": -6.375
     },
     "operasional": [
-      { "hari": "senin", "operasional": true, "jam": "08:00-17:00" },
-      { "hari": "selasa", "operasional": true, "jam": "08:00-17:00" },
-      { "hari": "rabu", "operasional": true, "jam": "08:00-17:00" },
-      { "hari": "kamis", "operasional": true, "jam": "08:00-17:00" },
-      { "hari": "jumat", "operasional": true, "jam": "08:00-17:00" },
-      { "hari": "sabtu", "operasional": true, "jam": "08:00-15:00" },
-      { "hari": "minggu", "operasional": false, "jam": "" }
+      { "hari": "Senin", "operasional": true, "jam": "08:00-17:00" },
+      { "hari": "Selasa", "operasional": true, "jam": "08:00-17:00" },
+      { "hari": "Rabu", "operasional": true, "jam": "08:00-17:00" },
+      { "hari": "Kamis", "operasional": true, "jam": "08:00-17:00" },
+      { "hari": "Jumat", "operasional": true, "jam": "08:00-17:00" },
+      { "hari": "Sabtu", "operasional": true, "jam": "08:00-15:00" },
+      { "hari": "Minggu", "operasional": false, "jam": "" }
     ],
     "nama_produk": [
       {
@@ -555,7 +555,7 @@
     ],
     "kategori": "Jasa",
     "logo_umkm": "logo/jagoanbaut.png",
-    "galery": ["galeri/bengkel1.jpg", "galeri/bengkel2.jpg"],
+    "gallery": ["galeri/bengkel1.jpg", "galeri/bengkel2.jpg"],
     "video": "",
     "sosial_media": { "facebook": "Bengkel Jagoan Baut" },
     "ratings": { "rata_rata": 4.1, "jumlah_review": 95 },
@@ -583,16 +583,16 @@
       "kota": "Bekasi",
       "kode_pos": 17510,
       "longitude": 107.035,
-      "altitude": -6.315
+      "latitude": -6.315
     },
     "operasional": [
-      { "hari": "senin", "operasional": true, "jam": "06:00-17:00" },
-      { "hari": "selasa", "operasional": true, "jam": "06:00-17:00" },
-      { "hari": "rabu", "operasional": true, "jam": "06:00-17:00" },
-      { "hari": "kamis", "operasional": true, "jam": "06:00-17:00" },
-      { "hari": "jumat", "operasional": true, "jam": "06:00-17:00" },
-      { "hari": "sabtu", "operasional": true, "jam": "06:00-14:00" },
-      { "hari": "minggu", "operasional": false, "jam": "" }
+      { "hari": "Senin", "operasional": true, "jam": "06:00-17:00" },
+      { "hari": "Selasa", "operasional": true, "jam": "06:00-17:00" },
+      { "hari": "Rabu", "operasional": true, "jam": "06:00-17:00" },
+      { "hari": "Kamis", "operasional": true, "jam": "06:00-17:00" },
+      { "hari": "Jumat", "operasional": true, "jam": "06:00-17:00" },
+      { "hari": "Sabtu", "operasional": true, "jam": "06:00-14:00" },
+      { "hari": "Minggu", "operasional": false, "jam": "" }
     ],
     "nama_produk": [
       {
@@ -609,7 +609,7 @@
     ],
     "kategori": "Makanan",
     "logo_umkm": "logo/mamaniakue.png",
-    "galery": ["galeri/kue1.jpg", "galeri/kue2.jpg"],
+    "gallery": ["galeri/kue1.jpg", "galeri/kue2.jpg"],
     "video": "",
     "sosial_media": { "whatsapp": "6285600112233" },
     "ratings": { "rata_rata": 4.8, "jumlah_review": 105 },
@@ -637,16 +637,16 @@
       "kota": "Jakarta Pusat",
       "kode_pos": 10430,
       "longitude": 106.855,
-      "altitude": -6.185
+      "latitude": -6.185
     },
     "operasional": [
-      { "hari": "senin", "operasional": true, "jam": "08:00-20:00" },
-      { "hari": "selasa", "operasional": true, "jam": "08:00-20:00" },
-      { "hari": "rabu", "operasional": true, "jam": "08:00-20:00" },
-      { "hari": "kamis", "operasional": true, "jam": "08:00-20:00" },
-      { "hari": "jumat", "operasional": true, "jam": "08:00-20:00" },
-      { "hari": "sabtu", "operasional": true, "jam": "09:00-16:00" },
-      { "hari": "minggu", "operasional": false, "jam": "" }
+      { "hari": "Senin", "operasional": true, "jam": "08:00-20:00" },
+      { "hari": "Selasa", "operasional": true, "jam": "08:00-20:00" },
+      { "hari": "Rabu", "operasional": true, "jam": "08:00-20:00" },
+      { "hari": "Kamis", "operasional": true, "jam": "08:00-20:00" },
+      { "hari": "Jumat", "operasional": true, "jam": "08:00-20:00" },
+      { "hari": "Sabtu", "operasional": true, "jam": "09:00-16:00" },
+      { "hari": "Minggu", "operasional": false, "jam": "" }
     ],
     "nama_produk": [
       { "nama": "Print Hitam Putih (per lembar)", "harga": 300, "foto": "" },
@@ -655,7 +655,7 @@
     ],
     "kategori": "Jasa",
     "logo_umkm": "logo/cepatkilat.png",
-    "galery": ["galeri/jasa-print.jpg"],
+    "gallery": ["galeri/jasa-print.jpg"],
     "video": "",
     "sosial_media": { "whatsapp": "6281611223344" },
     "ratings": { "rata_rata": 4.5, "jumlah_review": 110 },
@@ -683,16 +683,16 @@
       "kota": "Tangerang",
       "kode_pos": 15143,
       "longitude": 106.6333,
-      "altitude": -6.175
+      "latitude": -6.175
     },
     "operasional": [
-      { "hari": "senin", "operasional": true, "jam": "10:00-18:00" },
-      { "hari": "selasa", "operasional": true, "jam": "10:00-18:00" },
-      { "hari": "rabu", "operasional": true, "jam": "10:00-18:00" },
-      { "hari": "kamis", "operasional": true, "jam": "10:00-18:00" },
-      { "hari": "jumat", "operasional": true, "jam": "10:00-18:00" },
-      { "hari": "sabtu", "operasional": true, "jam": "10:00-20:00" },
-      { "hari": "minggu", "operasional": true, "jam": "10:00-20:00" }
+      { "hari": "Senin", "operasional": true, "jam": "10:00-18:00" },
+      { "hari": "Selasa", "operasional": true, "jam": "10:00-18:00" },
+      { "hari": "Rabu", "operasional": true, "jam": "10:00-18:00" },
+      { "hari": "Kamis", "operasional": true, "jam": "10:00-18:00" },
+      { "hari": "Jumat", "operasional": true, "jam": "10:00-18:00" },
+      { "hari": "Sabtu", "operasional": true, "jam": "10:00-20:00" },
+      { "hari": "Minggu", "operasional": true, "jam": "10:00-20:00" }
     ],
     "nama_produk": [
       {
@@ -713,7 +713,7 @@
     ],
     "kategori": "Jasa",
     "logo_umkm": "logo/jepretceria.png",
-    "galery": ["galeri/foto1.jpg", "galeri/foto2.jpg", "galeri/foto3.jpg"],
+    "gallery": ["galeri/foto1.jpg", "galeri/foto2.jpg", "galeri/foto3.jpg"],
     "video": "video/studio-behind-scene.mp4",
     "sosial_media": { "instagram": "@jepretceria", "website": "" },
     "ratings": { "rata_rata": 4.7, "jumlah_review": 130 },

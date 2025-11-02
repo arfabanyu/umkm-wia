@@ -1,6 +1,8 @@
 "use client";
 // src/pages/DetailUMKMPage.tsx
 // import { useParams } from "react-router-dom";
+import dynamic from "next/dynamic";
+import { useMemo } from "react";
 import { useParams } from "next/navigation";
 import { umkmData } from "@/data/umkmData";
 import Link from "next/link";
@@ -8,10 +10,20 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowLeftCircle } from "lucide-react";
 import { SiteHeader } from "@/components/site-header";
 import Image from "next/image";
+import UMKMMap from "@/components/map";
 
 export default function DetailUMKMPage() {
   const { id } = useParams<{ id: string }>();
   const umkm = umkmData.find((item) => item.id === id);
+
+  const Map = useMemo(
+    () =>
+      dynamic(() => import("@/components/map"), {
+        loading: () => <p>A map is loading</p>,
+        ssr: false,
+      }),
+    [],
+  );
 
   if (!umkm) {
     return (
@@ -58,12 +70,11 @@ export default function DetailUMKMPage() {
             <p className="text-secondary-foreground mb-4">{umkm.deskripsi}</p>
 
             <div className="flex flex-wrap gap-3 text-sm text-foreground">
-              <p>Tahun berdiri: {umkm.tahun_berdiri}</p>
-              <p>• Pemilik: {umkm.nama_pemilik}</p>
-              <p>
-                • Rating: ⭐ {umkm.ratings.rata_rata} (
-                {umkm.ratings.jumlah_review} ulasan)
-              </p>
+              <p>Tahun berdiri: {umkm.tahun_berdiri || "-"}</p>
+              {" | "}
+              <p>Pemilik: {umkm.nama_pemilik}</p>
+              {" | "}
+              <p>Rating: ⭐ {umkm.ratings || "0.0"}</p>
             </div>
           </div>
         </div>
@@ -97,6 +108,21 @@ export default function DetailUMKMPage() {
             {umkm.alamat.nama_jalan} No. {umkm.alamat.nomor}, {umkm.alamat.kota}
             , {umkm.alamat.kode_pos}
           </p>
+          <br />
+          {/* <UMKMMap
+            lat={umkm.alamat.latitude}
+            lng={umkm.alamat.longitude}
+            nama={umkm.nama_usaha}
+          /> */}
+          <iframe
+            src={umkm.alamat.embed}
+            width="600"
+            height="450"
+            className="border-0 rounded-lg w-full"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
 
         <div className="border-t p-6">
